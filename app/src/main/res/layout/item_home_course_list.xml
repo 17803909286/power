@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_8DP"
+        android:background="@color/colorWhiteF5F7FA" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_class_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingTop="@dimen/DIMEN_18DP"
+        android:paddingRight="@dimen/DIMEN_16DP"
+        android:paddingBottom="@dimen/DIMEN_14DP">
+
+        <TextView
+            android:id="@+id/tv_classify_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_20SP"
+            android:textStyle="bold"
+            tools:text="XXXX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/icon_more_yuan"
+            android:drawablePadding="@dimen/DIMEN_4DP"
+            android:gravity="center"
+            android:text="查看更多"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_classify_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

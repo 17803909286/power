@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/rel_main_find"
+    tools:ignore="ContentDescription,HardcodedText">
+
+    <ImageView
+        android:id="@+id/iv_task_icon"
+        android:layout_width="@dimen/DIMEN_39DP"
+        android:layout_height="@dimen/DIMEN_39DP"
+        android:background="@drawable/icon_find_day" />
+
+    <LinearLayout style="@style/ll_main_find_task">
+
+        <TextView
+            android:id="@+id/tv_task_title"
+            style="@style/text_main_find_title"
+            android:text="每日签到 0/1" />
+
+        <TextView
+            android:id="@+id/tv_task_content"
+            style="@style/text_main_find_fen"
+            android:text="10积分" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_finish"
+        style="@style/button_main_find" />
+</RelativeLayout>

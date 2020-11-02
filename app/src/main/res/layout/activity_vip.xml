@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded,UselessParent
+                ,ContentDescription,RelativeOverlap">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarRightTextColor="@color/colorBlack181823"
+        app:MytitleBarTitle="开通动力营" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_pay_vip"
+        android:layout_below="@+id/titleBar">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_145DP"
+                    android:layout_marginLeft="@dimen/DIMEN_24DP"
+                    android:layout_marginTop="@dimen/DIMEN_12DP"
+                    android:layout_marginRight="@dimen/DIMEN_24DP"
+                    android:background="@drawable/back_yellow_vip">
+
+                    <TextView
+                        android:id="@+id/tv_vip_up_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_16DP"
+                        android:layout_marginTop="@dimen/DIMEN_16DP"
+                        android:text="动力营"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/DIMEN_16SP"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_vip_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_vip_up_tip"
+                        android:layout_marginLeft="@dimen/DIMEN_16DP"
+                        android:layout_marginTop="@dimen/DIMEN_8DP"
+                        android:text="介绍：开通幸福人生VIP可免费观看全部会员课程一年"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/DIMEN_12SP" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_87DP"
+                    android:background="@drawable/back_white_vip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_48DP"
+                        android:layout_marginTop="@dimen/DIMEN_44DP"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/DIMEN_16DP"
+                        android:text="请选择支付方式"
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textSize="@dimen/DIMEN_18SP"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_pay_way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
+
+                    <RelativeLayout
+                        style="@style/line_main_mine">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="合计"
+                            android:textSize="@dimen/DIMEN_16SP"
+                            android:textColor="@color/colorBlack1A1F28"/>
+
+                        <TextView
+                            android:id="@+id/tv_vip_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="99元"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/DIMEN_16SP"
+                            android:textColor="@color/colorBlack1A1F28"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_48DP"
+                        android:layout_marginTop="@dimen/DIMEN_16DP"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/DIMEN_16DP"
+                        android:text="动力营权益"
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textSize="@dimen/DIMEN_18SP"
+                        android:textStyle="bold" />
+
+                    <WebView
+                        android:id="@+id/webView_vip_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:fadingEdge="none"
+                        android:overScrollMode="never"
+                        tools:ignore="WebViewLayout" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_vip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:layout_marginBottom="@dimen/DIMEN_48DP"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold" />
+</RelativeLayout>

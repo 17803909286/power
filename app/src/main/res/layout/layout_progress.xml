@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.power.home.ui.widget.TouchInterceptLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <FrameLayout
+        android:layout_width="@dimen/DIMEN_120DP"
+        android:layout_height="@dimen/DIMEN_120DP"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="progress.json"
+            app:lottie_loop="true" />
+
+    </FrameLayout>
+</com.power.home.ui.widget.TouchInterceptLayout>

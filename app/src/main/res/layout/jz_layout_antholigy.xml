@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_280DP"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackCC000000">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_antholigy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/DIMEN_30DP"
+        android:paddingBottom="@dimen/DIMEN_30DP"/>
+
+
+</LinearLayout>
+

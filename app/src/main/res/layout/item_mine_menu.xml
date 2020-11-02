@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/line_main_mine">
+
+    <ImageView
+        android:id="@+id/iv_item_mine_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/icon_mine_change" />
+
+    <TextView
+        android:id="@+id/tv_item_mine_menu"
+        style="@style/text_mine"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_toRightOf="@+id/iv_item_mine_menu"
+        tools:text="输入兑换码" />
+
+    <TextView
+        android:id="@+id/tv_item_mine_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/DIMEN_14DP"
+        tools:text="13333333333"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/line_0_5"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

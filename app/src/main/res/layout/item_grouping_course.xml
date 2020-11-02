@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_16DP">
+
+        <TextView
+            android:id="@+id/tv_course_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="01"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="如何创建经久不衰的体制"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:layout_marginLeft="@dimen/DIMEN_41DP"
+            android:layout_marginRight="@dimen/DIMEN_56DP"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_course_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费"
+            android:textColor="@color/colorYellowFFB339"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:visibility="visible"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/iv_course_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_course_locked"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:layout_marginBottom="@dimen/DIMEN_16DP">
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="22:30"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_41DP"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_already_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="已学4%"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:textColor="@color/colorBlack79808B"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_89DP"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlackDCE2E8"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

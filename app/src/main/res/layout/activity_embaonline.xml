@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarTitle="在线EMBA"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarRightImage="@drawable/icon_emba_share"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:visibility="gone"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/NestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_80DP"
+                    android:background="@drawable/icon_emba_title_bg"
+                    android:paddingLeft="@dimen/DIMEN_17DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:paddingTop="@dimen/DIMEN_20DP"
+                    android:paddingBottom="@dimen/DIMEN_12DP">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="在线EMBA"
+                        android:textSize="@dimen/DIMEN_16SP"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorYellowECBF86"/>
+
+                    <TextView
+                        android:id="@+id/tv_expired_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="到期时间：2020-09-11"
+                        android:textColor="@color/colorBlackC2C8D0"
+                        android:textSize="@dimen/DIMEN_12SP"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_renew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="续费"
+                        android:textSize="@dimen/DIMEN_12SP"
+                        android:textColor="@color/colorYellowECBF86"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/DIMEN_16DP"
+                        android:paddingRight="@dimen/DIMEN_16DP"
+                        android:paddingBottom="@dimen/DIMEN_4DP"
+                        android:paddingTop="@dimen/DIMEN_4DP"
+                        android:background="@drawable/shape_emba_renew_bg"/>
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_64DP"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/DIMEN_16DP">
+
+                    <ImageView
+                        android:id="@+id/iv_course_icon"
+                        android:layout_width="@dimen/DIMEN_64DP"
+                        android:layout_height="@dimen/DIMEN_64DP"
+                        android:src="@drawable/icon_place_holder_64_64"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/DIMEN_12DP">
+
+                        <TextView
+                            android:id="@+id/tv_course_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="动力营"
+                            android:textColor="@color/colorBlack1A1F28"
+                            android:textSize="@dimen/DIMEN_16SP"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:id="@+id/tv_course_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="企业家专属学习俱乐部"
+                            android:textColor="@color/colorBlack79808B"
+                            android:textSize="@dimen/DIMEN_12SP"
+                            android:layout_marginTop="@dimen/DIMEN_8DP"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_8DP"
+                    android:background="@color/colorWhiteF5F7FA" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/DIMEN_18DP"
+                    android:paddingBottom="@dimen/DIMEN_10DP">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="精品专辑推荐学习"
+                        android:textSize="@dimen/DIMEN_20SP"
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/DIMEN_16DP"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tv_recommend_album"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="全部"
+                        android:textColor="@color/colorBlackC2C8D0"
+                        android:textSize="@dimen/DIMEN_12SP"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/icon_right_gray"
+                        android:drawablePadding="@dimen/DIMEN_4DP"
+                        android:paddingLeft="@dimen/DIMEN_16DP"
+                        android:paddingRight="@dimen/DIMEN_16DP"/>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_recommend_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/tv_emba_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:text="立即加入 ¥ /年"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_16SP"
+            android:textStyle="bold"
+            android:background="@color/colorBlue0D7EF9"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

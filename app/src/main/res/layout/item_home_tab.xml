@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/DIMEN_44DP"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/DIMEN_10DP"
+    android:paddingRight="@dimen/DIMEN_10DP">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:text="商业模式"
+        android:textSize="@dimen/DIMEN_18SP"
+        android:textColor="@color/colorBlack1A1F28"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/view_indicator"
+        android:layout_width="@dimen/DIMEN_24DP"
+        android:layout_height="@dimen/DIMEN_4DP"
+        android:background="@color/colorBlue0D7EF9"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

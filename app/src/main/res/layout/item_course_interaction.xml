@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="9dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingRight="@dimen/DIMEN_16DP">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_header"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="木目"
+            android:textColor="@color/colorBlack181823"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="09-05 21:00"
+            android:textSize="@dimen/DIMEN_10SP"
+            android:textColor="@color/colorBlackA4ABB3"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="讲得真心不错"
+        android:textColor="@color/colorBlack51596D"
+        android:textSize="@dimen/DIMEN_12SP"
+        android:layout_marginBottom="@dimen/DIMEN_12SP"
+        android:paddingLeft="@dimen/DIMEN_52DP"
+        android:paddingRight="@dimen/DIMEN_16DP"/>
+
+</LinearLayout>

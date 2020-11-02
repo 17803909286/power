@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/DIMEN_16DP"
+    android:layout_marginRight="@dimen/DIMEN_16DP"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="动力营零售"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_money_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="398.00"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_money_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        tools:text="购买用户：这里是用户昵称"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_money_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_item_money_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            tools:text="推荐高级合伙人：这里是用户昵称"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/tv_item_money_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            tools:text="专辑价格：¥99.00"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_money_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2020年1月19日 23:59"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/tv_item_money_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_tip_down"
+            android:drawablePadding="@dimen/DIMEN_5DP"
+            android:gravity="right"
+            android:text="详情"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_0_5"
+        android:layout_marginTop="@dimen/DIMEN_12DP" />
+</LinearLayout>

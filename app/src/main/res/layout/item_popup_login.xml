@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_126DP"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/DIMEN_32DP"
+        android:layout_marginRight="@dimen/DIMEN_32DP"
+        android:orientation="vertical"
+        android:background="@drawable/back_popup">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/DIMEN_24DP"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:textStyle="bold"
+            tools:text="你的账号已在其他设备登录" />
+
+        <Button
+            android:id="@+id/button_creat_commit_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:background="@drawable/back_button_blue_sure"
+            android:text="@string/sure"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_16DP" />
+        
+
+
+
+
+        
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

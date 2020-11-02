@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">动力学社测试版</string>
+    <string name="loading">加载中...</string>
+    <string name="close">关闭</string>
+    <string name="main_home">成长</string>
+    <string name="main_find">发现</string>
+    <string name="main_mine">自我</string>
+    <string name="back">返回</string>
+    <string name="pull_get_more">上拉获取更多</string>
+    <string name="loading_now">正在加载...</string>
+    <string name="data_empty">暂无数据</string>
+
+</resources>

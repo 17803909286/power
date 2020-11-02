@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_204DP"
+    android:layout_marginLeft="@dimen/DIMEN_16DP"
+    android:layout_marginRight="@dimen/DIMEN_16DP"
+    android:layout_marginBottom="@dimen/DIMEN_16DP"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded,ContentDescription">
+
+    <ImageView
+        android:id="@+id/iv_course_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_114DP"
+        android:scaleType="fitXY"
+        android:background="@color/colorBlackA6AEB7" />
+
+    <TextView
+        android:id="@+id/tv_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:singleLine="true"
+        tools:text="标题标题标题标题标题标题标题标题标题标题标题"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_course_title_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_4DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:singleLine="true"
+        tools:text="副标题副标题副标题副标题"
+        android:textColor="@color/colorBlack79808B"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <TextView
+        android:id="@+id/tv_course_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        tools:text="2019-02-21 18：00"
+        android:textColor="@color/colorBlackC2C8D0"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+
+</LinearLayout>

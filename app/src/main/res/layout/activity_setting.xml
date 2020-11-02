@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:id="@+id/ll_content"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="设置" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_phone"
+        style="@style/line_main_mine">
+
+        <TextView
+            style="@style/text_mine"
+            android:text="更换手机号"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+        <TextView
+            android:id="@+id/tv_setting_phone"
+            style="@style/text_mine"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/DIMEN_5DP"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_14DP"
+            tools:text="183****2122" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_0_5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_clear"
+        style="@style/line_main_mine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+        <TextView
+            android:id="@+id/tv_setting_rom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_14DP"
+            tools:text="12M" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_0_5" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_60DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:background="@drawable/back_button_enable"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold" />
+
+</LinearLayout>

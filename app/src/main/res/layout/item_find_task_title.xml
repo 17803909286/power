@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/DIMEN_20DP"
+    android:layout_marginBottom="@dimen/DIMEN_10DP"
+    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded">
+
+    <TextView
+        android:id="@+id/tv_task_big_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:text="每日任务（1/4）"
+        android:textColor="@color/colorBlack181823"
+        android:textSize="@dimen/DIMEN_18SP"
+        android:textStyle="bold" />
+
+</LinearLayout>

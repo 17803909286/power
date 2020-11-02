@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteF5F7FA"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_black_back"
+        app:MytitleBarTitle="消息通知" />
+
+
+    <include layout="@layout/include_tablayout"
+        android:visibility="gone"/>
+
+    <com.power.home.ui.widget.MyViewPager
+        android:id="@+id/viewPager_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

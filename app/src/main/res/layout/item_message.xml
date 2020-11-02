@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/DIMEN_16DP"
+    android:layout_marginTop="@dimen/DIMEN_16DP"
+    android:layout_marginRight="@dimen/DIMEN_16DP"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded,ContentDescription">
+
+
+    <TextView
+        android:id="@+id/tv_message_records_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_12DP"
+        android:maxLines="2"
+        tools:text="如何让机制更好用、更有效"
+        android:textColor="@color/colorBlack1A1F28"
+        android:layout_toLeftOf="@+id/iv_message_records_right"
+        android:textSize="@dimen/DIMEN_12SP"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_message_records_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_message_records_title"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginBottom="@dimen/DIMEN_12DP"
+        android:singleLine="true"
+        tools:text="03-06 12:00"
+        android:textColor="@color/colorBlackC2C8D0"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <ImageView
+        android:id="@+id/iv_message_records_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_right_gray"/>
+</RelativeLayout>

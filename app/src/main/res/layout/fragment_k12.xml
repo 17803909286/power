@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipChildren="false"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent">
+
+
+    <ImageView
+        android:id="@+id/iv_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_180DP"
+        android:background="@color/colorWhite00"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_180DP"
+        android:background="@drawable/icon_home_header_bg" />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite00" />
+
+            <LinearLayout
+                android:id="@+id/ll_title_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_44DP"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_main_home_message"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/DIMEN_12DP"
+                    android:paddingRight="@dimen/DIMEN_12DP"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/DIMEN_32DP"
+                    android:layout_marginTop="@dimen/DIMEN_6DP"
+                    android:layout_marginBottom="@dimen/DIMEN_6DP"
+                    android:layout_marginRight="@dimen/DIMEN_10DP"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/DIMEN_12DP"
+                        android:src="@drawable/icon_search" />
+
+                    <TextView
+                        android:id="@+id/tv_searchkey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/DIMEN_4DP"
+                        android:layout_marginRight="@dimen/DIMEN_12DP"
+                        android:gravity="center|left"
+                        android:text="财富人生"
+                        android:textColor="@color/colorBlackC2C8D0"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/tv_growth"
+                    android:layout_width="@dimen/DIMEN_52DP"
+                    android:layout_height="@dimen/DIMEN_24DP"
+                    android:background="@drawable/icon_home_vip"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/DIMEN_10DP"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_title_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_44DP"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="学霸课堂"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_16SP"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:src="@drawable/icon_search_black" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_44DP"
+                android:background="@color/colorWhite"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_classify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_back_to_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_main_home_top"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/DIMEN_84DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"/>
+
+
+</RelativeLayout>

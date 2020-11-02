@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tablayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_44DP"
+    android:background="@color/colorWhite"
+    app:layout_collapseMode="pin"
+    app:tabIndicatorColor="@color/colorAccent"
+    app:tabSelectedTextColor="@color/colorAccent"
+    app:tabBackground="@color/colorWhite"
+    app:tabIndicatorHeight="@dimen/DIMEN_4DP"
+    app:tabTextAppearance="@style/TabLayoutTextAppearance"
+    app:tabTextColor="@color/colorBlack1A1F28" />

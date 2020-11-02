@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteF5F7F9"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,Autofill,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="提现" />
+
+    <ImageView
+        android:layout_width="@dimen/DIMEN_100DP"
+        android:layout_height="@dimen/DIMEN_100DP"
+        android:layout_marginTop="@dimen/DIMEN_40DP"
+        android:background="@drawable/icon_withdrawl_finish"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现申请已提交，等待人工审核"
+        android:textColor="@color/colorBlack1A1F28"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_24DP"
+        android:textSize="@dimen/DIMEN_14DP" />
+
+
+    <Button
+        android:id="@+id/button_withdrawal_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_49DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_40DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:background="@drawable/back_button_enable"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+
+

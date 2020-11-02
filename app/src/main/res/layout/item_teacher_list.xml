@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_94DP"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/DIMEN_16DP"
+    android:paddingTop="@dimen/DIMEN_12DP"
+    android:paddingRight="@dimen/DIMEN_16DP"
+    android:paddingBottom="@dimen/DIMEN_12DP"
+    tools:ignore="HardcodedText,RtlHardcoded,ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="@dimen/DIMEN_70DP"
+        android:layout_height="@dimen/DIMEN_70DP">
+
+        <com.power.home.ui.widget.CircleImageView
+            android:id="@+id/civ_teacher"
+            android:layout_width="@dimen/DIMEN_60DP"
+            android:layout_height="@dimen/DIMEN_60DP"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/icon_teacher_holder" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_teacher_champ" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_8DP"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_18SP"
+            android:textStyle="bold"
+            tools:text="xxx" />
+
+        <TextView
+            android:id="@+id/tv_teacher_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:singleLine="true"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_14SP"
+            tools:text="副标题副标题副标题副标题" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_right_gray" />
+
+</LinearLayout>

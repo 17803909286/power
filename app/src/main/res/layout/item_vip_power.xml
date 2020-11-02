@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/DIMEN_20DP"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/iv_vip_icon"
+        android:layout_width="@dimen/DIMEN_52DP"
+        android:layout_height="@dimen/DIMEN_52DP"
+        android:src="@drawable/icon_vip_26_zhuanti"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_vip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="26大专题"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:textColor="@color/colorBlack1A1F28"
+        android:layout_marginTop="@dimen/DIMEN_4DP"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_vip_content"
+        android:layout_width="@dimen/DIMEN_80DP"
+        android:layout_height="wrap_content"
+        tools:text="畅享已上线的26大痛点专题"
+        android:gravity="center"
+        android:textSize="@dimen/DIMEN_12SP"
+        android:textColor="@color/colorBlackC2C8D0"
+        android:layout_marginTop="@dimen/DIMEN_4DP"
+        android:lineSpacingExtra="@dimen/DIMEN_2DP"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite00">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_90DP"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/DIMEN_33DP"
+            android:gravity="center"
+            android:text="分享瓜分亿元红包"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_20SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/DIMEN_9DP"
+            android:gravity="center"
+            android:text="成功分享并返回，有机会获取现金红包"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_112DP"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_share_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_share_wx"
+            android:drawablePadding="@dimen/DIMEN_8DP"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/tv_share_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_share_friend"
+            android:drawablePadding="@dimen/DIMEN_8DP"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/tv_share_poster"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_share_poster"
+            android:drawablePadding="@dimen/DIMEN_8DP"
+            android:gravity="center"
+            android:text="生成海报"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP" />
+    </LinearLayout>
+
+
+</LinearLayout>

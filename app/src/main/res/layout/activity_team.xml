@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="我的团队" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_157DP"
+        android:background="@drawable/back_team_info"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/DIMEN_24DP"
+            android:text="团队总人数"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_team_all_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_32SP"
+            android:textStyle="bold"
+            tools:text="1024" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_44DP"
+            android:layout_marginTop="@dimen/DIMEN_20DP"
+            android:layout_marginRight="@dimen/DIMEN_44DP">
+
+            <TextView
+                android:id="@+id/tv_team_use_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_14SP"
+                android:textStyle="bold"
+                tools:text="已用名额：41" />
+
+            <TextView
+                android:id="@+id/tv_team_surplus_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_14SP"
+                android:textStyle="bold"
+                tools:text="未用名额：59" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_invite_vip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingRight="@dimen/DIMEN_16DP">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="我的会员"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_invite_vip_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            tools:text="211" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_0_5"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP" />
+
+    <LinearLayout
+        android:id="@+id/ll_invite_ambassador"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingRight="@dimen/DIMEN_16DP"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="我的推广大使"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_invite_ambassador_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            tools:text="211" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_0_5"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP" />
+
+    <LinearLayout
+        android:id="@+id/ll_invite_school"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingRight="@dimen/DIMEN_16DP"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="我的联盟校长"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_invite_school_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            tools:text="211" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_0_5"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP" />
+
+</LinearLayout>

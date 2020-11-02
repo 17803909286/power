@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_mine_diamon"
+            android:layout_width="@dimen/DIMEN_48DP"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:layout_centerInParent="true"
+            tools:src="@drawable/icon_mine_study_record" />
+
+        <ImageView
+            android:id="@+id/iv_get"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_50DP"
+            android:visibility="visible"
+            tools:src="@drawable/icon_mine_get" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_mine_diamon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_4DP"
+        android:gravity="center"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_12SP"
+        tools:text="学习记录" />
+
+</LinearLayout>

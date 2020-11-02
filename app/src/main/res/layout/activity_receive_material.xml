@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ReceiveMaterialActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="领取资料" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_216DP"
+                android:layout_marginTop="@dimen/DIMEN_4DP"
+                android:layout_marginBottom="@dimen/DIMEN_8DP">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/DIMEN_128DP"
+                    android:layout_height="@dimen/DIMEN_192DP"
+                    app:cardElevation="@dimen/DIMEN_12DP"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/img_course"
+                            android:layout_width="@dimen/DIMEN_128DP"
+                            android:layout_height="@dimen/DIMEN_192DP"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_128DP"
+                            android:layout_height="@dimen/DIMEN_192DP"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/course_img_shade" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_course_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="企业如何成交客户的十大经典话术？"
+                android:textSize="@dimen/DIMEN_16SP"
+                android:textColor="@color/colorBlack1A1F28"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_course_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="千年不倒企业到底在卖什么"
+                android:textSize="@dimen/DIMEN_12SP"
+                android:textColor="@color/colorBlack79808B"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:layout_marginTop="@dimen/DIMEN_8DP"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_free_rreceive"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_48DP"
+                android:text="免费领取"
+                android:textStyle="bold"
+                android:textSize="@dimen/DIMEN_16SP"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/shape_free_get_bg"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:layout_marginTop="@dimen/DIMEN_24DP"/>
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/DIMEN_60DP"/>
+            
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

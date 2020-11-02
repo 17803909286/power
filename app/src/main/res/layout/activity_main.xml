@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <View
+        style="@style/line_0_5"/>
+
+    <RadioGroup
+        android:id="@+id/rbs_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_home"
+            style="@style/tab_main_style"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home"
+            android:text="@string/main_home" />
+
+        <RadioButton
+            android:id="@+id/rb_main_find"
+            style="@style/tab_main_style"
+            android:drawableTop="@drawable/main_order"
+            android:text="@string/main_find" />
+
+        <RadioButton
+            android:id="@+id/rb_main_mine"
+            style="@style/tab_main_style"
+            android:drawableTop="@drawable/main_mine"
+            android:text="@string/main_mine" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue027AEE"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_everyday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_470DP"
+                    android:background="@drawable/back_everyday">
+
+                    <com.power.home.ui.widget.MyTitleBar
+                        android:id="@+id/titleBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_44DP"
+                        android:layout_marginTop="@dimen/DIMEN_20DP"
+                        app:MytitleBarBackground="@android:color/transparent"
+                        app:MytitleBarLeftImage="@drawable/icon_title_back_white_vip"
+                        app:MytitleBarTitle="每日活动"
+                        app:MytitleBarTitleColor="@color/colorWhite" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_342DP"
+                    android:layout_below="@+id/rl_up"
+                    android:layout_marginBottom="@dimen/DIMEN_13DP"
+                    android:background="@drawable/back_everyday_recycle">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_everyDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_36DP"
+                        android:layout_marginTop="@dimen/DIMEN_77DP"
+                        android:layout_marginRight="@dimen/DIMEN_36DP" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

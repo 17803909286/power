@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_56DP"
+    android:layout_marginLeft="@dimen/DIMEN_16DP"
+    android:layout_marginRight="@dimen/DIMEN_16DP"
+    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现到银行卡账户（8888）"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:text="2020年1月19日 23:59"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999.99"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:text="正在审核"
+            android:textColor="@color/colorRedFF4D3A"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_1"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

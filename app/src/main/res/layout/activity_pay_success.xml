@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="支付成功" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_40DP">
+
+        <ImageView
+            android:id="@+id/iv_pay_success"
+            android:layout_width="@dimen/DIMEN_100DP"
+            android:layout_height="@dimen/DIMEN_100DP"
+            tools:src="@drawable/icon_pay_success"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="你已成功购买《动力营》课程，赶紧去学习吧！"
+        android:gravity="center"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:layout_marginTop="@dimen/DIMEN_24DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"/>
+
+
+    <TextView
+        android:id="@+id/tv_immediately_study"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:text="立即学习"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold"
+        android:background="@color/colorBlue0D7EF9"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_40DP"/>
+
+    <TextView
+        android:id="@+id/tv_back_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:text="回到首页"
+        android:textColor="@color/colorBlue0D7EF9"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold"
+        android:background="@color/colorBlueCFE5FE"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_20DP"/>
+
+</LinearLayout>

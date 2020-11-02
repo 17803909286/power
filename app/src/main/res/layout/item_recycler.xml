@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_below"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteF9F9F9"
+    tools:ignore="RtlHardcoded,UselessParent"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/llayFotterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_30DP"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="@dimen/DIMEN_60DP"
+            android:layout_height="@dimen/DIMEN_0_5DP"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            android:background="@color/colorBlack666666"
+            android:visibility="gone"/>
+
+
+        <com.myc2c.wallet.ui.widget.UILoadingBar
+            xmlns:progress="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/DIMEN_20DP"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            progress:borderSize="@dimen/DIMEN_2DP"
+            />
+
+        <TextView
+            android:id="@+id/foot_view_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_10DP"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            android:textColor="@color/colorBlack666666"
+            android:textSize="@dimen/DIMEN_12DP"
+            android:text="@string/pull_get_more"/>
+
+        <TextView
+            android:id="@+id/tv_line2"
+            android:layout_width="@dimen/DIMEN_60DP"
+            android:layout_height="@dimen/DIMEN_0_5DP"
+            android:layout_marginLeft="@dimen/DIMEN_10DP"
+            android:background="@color/colorBlack666666"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

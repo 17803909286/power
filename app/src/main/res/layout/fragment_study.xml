@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_study"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_today_plan_finished"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_227DP"
+                        android:background="@color/colorBlue0D7EF9"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/icon_study_plan_default" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/DIMEN_70DP"
+                            android:paddingLeft="@dimen/DIMEN_16DP"
+                            android:text="今日计划"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/DIMEN_28SP"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/DIMEN_122DP"
+                            android:paddingLeft="@dimen/DIMEN_16DP"
+                            android:text="已全部完成，加油！"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/DIMEN_18SP"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_today_plan_unfinished"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_136DP"
+                        android:background="@color/colorBlue0D7EF9"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/icon_study_plan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/DIMEN_70DP"
+                            android:paddingLeft="@dimen/DIMEN_16DP"
+                            android:text="今日计划"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/DIMEN_28SP"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_today_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/tv_finish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/DIMEN_16DP"
+                        android:paddingTop="@dimen/DIMEN_16DP"
+                        android:text="已学完课程"
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textSize="@dimen/DIMEN_20SP"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_study_finish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/DIMEN_12DP"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_finish_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/DIMEN_50DP"
+                        android:paddingBottom="@dimen/DIMEN_50DP"
+                        android:text="今天还没有开始学习"
+                        android:textColor="@color/colorBlack79808B"
+                        android:textSize="@dimen/DIMEN_12SP"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/left_layout"
+                    android:layout_width="@dimen/DIMEN_50DP"
+                    android:layout_height="@dimen/DIMEN_44DP"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/DIMEN_20DP"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/DIMEN_16DP"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_title_back_white_vip" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

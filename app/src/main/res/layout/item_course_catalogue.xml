@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_88DP"
+    android:background="@color/colorWhite">
+
+
+        <TextView
+            android:id="@+id/tv_learn_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_16DP"
+            android:text="上次学到"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_10SP"
+            android:background="@color/colorYellowFFB339"
+            android:paddingLeft="@dimen/DIMEN_4DP"
+            android:paddingRight="@dimen/DIMEN_4DP"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_36DP">
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="01"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textStyle="bold"
+            android:gravity="top"
+            android:paddingLeft="@dimen/DIMEN_16DP" />
+        <ImageView
+            android:id="@+id/iv_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_course_playing"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:visibility="visible"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="何创建经久不衰的体制如何创建经久不衰的体制如何创建经久不衰的体制"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:layout_marginLeft="@dimen/DIMEN_41DP"
+            android:layout_marginRight="@dimen/DIMEN_56DP"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/tv_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费"
+            android:textColor="@color/colorYellowFFB339"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:layout_marginTop="1dp"/>
+
+        <ImageView
+            android:id="@+id/iv_course_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_course_locked"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:layout_marginBottom="11.5dp">
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="22:30"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_41DP"/>
+
+
+        <TextView
+            android:id="@+id/tv_already_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="已学4%"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:textColor="@color/colorBlack79808B"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_89DP"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_play_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_16DP"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/icon_course_gray_play"
+            android:drawablePadding="@dimen/DIMEN_4DP"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/DIMEN_4DP"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP"
+            tools:text="2.1万" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:background="@color/colorBlackDCE2E8"/>
+
+
+
+
+
+</LinearLayout>

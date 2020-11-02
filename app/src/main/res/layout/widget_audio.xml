@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_notify"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints">
+
+
+    <ImageView
+        android:id="@+id/iv_widget_audio"
+        android:layout_width="@dimen/DIMEN_56DP"
+        android:layout_height="@dimen/DIMEN_56DP"
+        android:layout_margin="@dimen/DIMEN_8DP"
+        android:src="@drawable/icon_place_holder_64_64" />
+
+    <TextView
+        android:id="@+id/tv_widget_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_8DP"
+        android:layout_weight="1"
+        android:textColor="@color/colorBlack79808B"
+        android:textSize="@dimen/DIMEN_14DP" />
+
+    <ImageView
+        android:id="@+id/iv_widget_play"
+        android:layout_width="@dimen/DIMEN_32DP"
+        android:layout_height="@dimen/DIMEN_32DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:src="@drawable/icon_widget_play" />
+
+    <ImageView
+        android:id="@+id/iv_widget_close"
+        android:layout_width="@dimen/DIMEN_16DP"
+        android:layout_height="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:src="@drawable/icon_widget_close" />
+
+</LinearLayout>

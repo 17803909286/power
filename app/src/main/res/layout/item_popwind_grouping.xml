@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/shape_popup_business_growth_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_16DP">
+
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_popup_grouping"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:paddingRight="@dimen/DIMEN_50DP"
+                android:paddingLeft="@dimen/DIMEN_50DP"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:layout_marginLeft="@dimen/DIMEN_16DP">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="课程大纲"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_14SP"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="@dimen/DIMEN_24DP"
+                android:layout_height="@dimen/DIMEN_4DP"
+                android:background="@color/colorBlue0D7EF9"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"/>
+
+
+    </LinearLayout>
+
+
+
+

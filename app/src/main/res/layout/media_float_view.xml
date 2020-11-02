@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_service_audio"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_60DP"
+    android:layout_gravity="bottom"
+    android:layout_marginLeft="@dimen/DIMEN_16DP"
+    android:layout_marginRight="@dimen/DIMEN_16DP"
+    android:layout_marginBottom="@dimen/DIMEN_62DP"
+    android:background="@drawable/back_black_float"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/iv_audio_close"
+        android:layout_width="@dimen/DIMEN_32DP"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:src="@drawable/icon_audio_close"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_audio"
+        android:layout_width="@dimen/DIMEN_40DP"
+        android:layout_height="@dimen/DIMEN_40DP"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_toRightOf="@+id/iv_audio_close"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_8DP"
+        android:layout_toLeftOf="@+id/iv_play"
+        android:layout_toRightOf="@+id/iv_audio"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_float_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_14DP" />
+
+        <TextView
+            android:id="@+id/tv_float_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_10DP" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="@dimen/DIMEN_32DP"
+        android:layout_height="@dimen/DIMEN_32DP"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:src="@drawable/icon_audio_pause" />
+
+</RelativeLayout>

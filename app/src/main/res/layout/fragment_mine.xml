@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteF5F7FA"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,SpUsage
+    ContentDescription,RelativeOverlap,UselessParent,DisableBaselineAlignment">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_168DP"
+                        android:background="@drawable/back_mine">
+
+                        <com.power.home.ui.widget.RedTipRechImageView
+                            android:id="@+id/red_mine_message"
+                            android:layout_width="@dimen/DIMEN_30DP"
+                            android:layout_height="@dimen/DIMEN_30DP"
+                            android:layout_marginLeft="@dimen/DIMEN_16DP"
+                            android:layout_marginTop="@dimen/DIMEN_40DP"
+                            android:padding="@dimen/DIMEN_5DP"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_mine_message"
+                            app:redTipsVisibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/DIMEN_105DP"
+                            android:layout_marginBottom="@dimen/DIMEN_16DP"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/tv_login_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/icon_right_gray"
+                                android:drawablePadding="@dimen/DIMEN_8DP"
+                                android:text="登录注册"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/DIMEN_16SP"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/DIMEN_8DP"
+                                android:text="合伙人"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/DIMEN_12SP"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/DIMEN_72DP"
+                        android:layout_height="@dimen/DIMEN_78DP"
+                        android:layout_marginLeft="@dimen/DIMEN_16DP"
+                        android:layout_marginTop="@dimen/DIMEN_132DP"
+                        android:layout_marginBottom="@dimen/DIMEN_12DP">
+
+                        <com.power.home.ui.widget.CircleImageView
+                            android:id="@+id/civ_head"
+                            android:layout_width="@dimen/DIMEN_72DP"
+                            android:layout_height="@dimen/DIMEN_72DP"
+                            android:src="@drawable/icon_avatar_header"
+                            app:border_color="@color/colorWhite"
+                            app:border_width="@dimen/DIMEN_4DP" />
+
+                        <ImageView
+                            android:id="@+id/iv_mine_is_vip"
+                            android:layout_width="@dimen/DIMEN_72DP"
+                            android:layout_height="@dimen/DIMEN_18DP"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/icon_mine_vip_null" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_login_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_up"
+                        android:layout_marginTop="@dimen/DIMEN_10DP"
+                        android:layout_marginLeft="@dimen/DIMEN_105DP"
+                        android:text="登录后观看更多精彩课程"
+                        android:textColor="@color/colorBlack79808B"
+                        android:textSize="@dimen/DIMEN_12SP" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_up"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/DIMEN_105DP"
+                            android:layout_marginTop="@dimen/DIMEN_5DP"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的推广码：918821"
+                                android:textColor="@color/colorBlack79808B"
+                                android:textSize="@dimen/DIMEN_12SP" />
+
+                            <TextView
+                                android:id="@+id/tv_copy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/DIMEN_10DP"
+                                android:text="复制"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/DIMEN_12SP"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_level"
+                            android:layout_marginLeft="@dimen/DIMEN_105DP"
+                            android:layout_marginTop="@dimen/DIMEN_8DP"
+                            android:textColor="@color/colorBlack79808B"
+                            android:textSize="@dimen/DIMEN_10SP"
+                            tools:text="变现营到期时间：2020-04-19" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_96DP"
+                    android:background="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/iv_main_mine_adv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_85DP"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_ver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100DP"
+                    android:background="@color/colorWhiteF5F7FA"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteF5F7FA"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarRightTextColor="@color/colorBlack181823"
+        app:MytitleBarTitle="提现" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_72DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:background="@drawable/back_withdrawl"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_withdrawl_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_12DP"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_14DP"
+            tools:text="到账银行卡:(**** **** **** 6666)" />
+
+        <TextView
+            android:id="@+id/tv_withdrawl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_14DP"
+            tools:text="姓名:王木木" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_235DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_12DP"
+            android:text="提现金额"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_16DP"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_money_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_12DP"
+                android:text="¥"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_32DP"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_withdrawl_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_12DP"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textColorHint="@color/colorBlackC2C8D0"
+                android:textSize="@dimen/DIMEN_14SP"
+                tools:hint="(提现金额不小于100元)" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_1"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_12DP"
+                android:text="账户余额"
+                android:textColor="@color/colorBlack79808B"
+                android:textSize="@dimen/DIMEN_14DP" />
+
+            <TextView
+                android:id="@+id/tv_withdrawl_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/DIMEN_14DP"
+                tools:text="¥199.00" />
+
+            <TextView
+                android:id="@+id/tv_withdrawl_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_12DP"
+                android:gravity="right"
+                android:text="全部提现"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/DIMEN_14DP"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_withdrawal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:background="@drawable/back_button_enable"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_16SP"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_withdrawl_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_16DP"
+        android:textColor="@color/colorBlack79808B"
+        android:textSize="@dimen/DIMEN_12DP"
+        tools:text="说明：每月1日到5日为提现日，其余时间暂不支持提现。" />
+
+</LinearLayout>

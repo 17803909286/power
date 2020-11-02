@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_64DP"
+    android:layout_margin="@dimen/DIMEN_16DP">
+
+    <ImageView
+        android:id="@+id/iv_course_icon"
+        android:layout_width="@dimen/DIMEN_64DP"
+        android:layout_height="@dimen/DIMEN_64DP"
+        android:src="@drawable/icon_place_holder_64_64"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/DIMEN_12DP">
+
+        <TextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="如何“毁掉”竞争对手的人才"
+            android:textSize="@dimen/DIMEN_16SP"
+            android:textColor="@color/colorBlack1A1F28"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_course_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="如何突现突袭、越轨发展"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:textColor="@color/colorBlack79808B"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/tv_course_title"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:gravity="center_vertical"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

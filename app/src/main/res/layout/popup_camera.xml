@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteF5F7FA"
+    android:orientation="vertical"
+    tools:ignore="Suspicious0dp,InefficientWeight,
+    HardcodedText,RtlSymmetry,RtlHardcoded,TextFields">
+
+
+    <Button
+        android:id="@+id/button_album"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:background="@color/colorWhite"
+        android:text="从相册选取"
+        android:textColor="@color/colorBlack333333"
+        android:textSize="@dimen/DIMEN_14DP" />
+
+    <View style="@style/line_0_5" />
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:background="@color/colorWhite"
+        android:text="拍照"
+        android:textColor="@color/colorBlack333333"
+        android:textSize="@dimen/DIMEN_14DP" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:background="@color/colorWhite"
+        android:text="取消"
+        android:textColor="@color/colorBlack333333"
+        android:textSize="@dimen/DIMEN_14DP" />
+</LinearLayout>

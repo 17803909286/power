@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded,ContentDescription">
+
+    <View
+        android:layout_width="@dimen/DIMEN_1DP"
+        android:layout_height="@dimen/DIMEN_74DP"
+        android:layout_marginLeft="@dimen/DIMEN_6DP"
+        android:background="@color/colorBlackDCE2E8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_66DP"
+        android:layout_marginLeft="@dimen/DIMEN_28DP"
+        android:layout_marginTop="@dimen/DIMEN_4DP"
+        android:layout_marginBottom="@dimen/DIMEN_4DP"
+        android:background="@color/colorWhiteF5F7FA"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_study_records_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:singleLine="true"
+            tools:text="如何让机制更好用、更有效"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_study_records_item_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:singleLine="true"
+            tools:text="已学：4%"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_82DP"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_66DP"
+        android:background="@drawable/study_finish_bg"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:paddingLeft="@dimen/DIMEN_12DP"
+        android:paddingRight="@dimen/DIMEN_16DP"
+        android:paddingBottom="@dimen/DIMEN_12DP"
+        android:paddingTop="@dimen/DIMEN_8DP">
+
+        <TextView
+            android:id="@+id/tv_courseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="如何套住客户不断收钱"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_courseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="22:30"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/icon_study_play"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

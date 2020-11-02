@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">动力学社</string>
+    <string name="loading">加载中...</string>
+    <string name="close">关闭</string>
+    <string name="main_home">首页</string>
+    <string name="main_find">学霸课堂</string>
+    <string name="main_mine">我的</string>
+    <string name="back">返回</string>
+    <string name="pull_get_more">上拉获取更多</string>
+    <string name="loading_now">正在加载...</string>
+    <string name="data_empty">暂无数据</string>
+    <string name="permission_tip">为了您的正常使用，请开启权限</string>
+    <string name="personverify_front">上传身份证正面照</string>
+    <string name="personverify_back">上传身份证反面照</string>
+
+    <string name="login">登录</string>
+    <string name="login_info">请登录查看您的积分排行</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="go_finish">去完成</string>
+    <string name="more_task">更多任务</string>
+
+    <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+    <string name="tips_not_wifi_confirm">继续播放</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="no_url">播放地址无效</string>
+    <string name="replay">重播</string>
+    <string name="click_to_restart">点击重试</string>
+    <string name="video_loading_failed">视频加载失败</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pay_vip_tip">你已成功开通动力营</string>
+    <string name="vip_power">HAPPINESS</string>
+
+</resources>

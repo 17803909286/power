@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/DIMEN_420DP"
+    android:background="@color/colorWhiteF5F7FA">
+
+    <ImageView
+        android:layout_width="@dimen/DIMEN_300DP"
+        android:layout_height="@dimen/DIMEN_343DP"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_invite_shadow" />
+
+    <LinearLayout
+        android:layout_width="@dimen/DIMEN_280DP"
+        android:layout_height="@dimen/DIMEN_397DP"
+        android:layout_marginLeft="@dimen/DIMEN_10DP"
+        android:layout_marginRight="@dimen/DIMEN_10DP"
+        android:background="@drawable/back_invite_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_280DP"
+            android:layout_height="@dimen/DIMEN_250DP"
+            android:layout_above="@+id/rl_bottom">
+
+            <ImageView
+                android:id="@+id/iv_advertising"
+                android:layout_width="@dimen/DIMEN_280DP"
+                android:layout_height="@dimen/DIMEN_250DP"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_20DP"
+                android:layout_height="@dimen/DIMEN_20DP"
+                android:layout_marginLeft="@dimen/DIMEN_10DP"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:background="@drawable/icon_share_logo" />
+
+            <TextView
+                android:id="@+id/tv_chose_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_32DP"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorBlack66000000"
+                android:gravity="center"
+                android:text="点击更换背景图片"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_12SP" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_12DP"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:maxLength="40"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textColorHint="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textStyle="bold"
+            tools:text="邀请你加入变现云课，一起学习" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/DIMEN_12DP">
+
+                <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_width="@dimen/DIMEN_50DP"
+                    android:layout_height="@dimen/DIMEN_50DP"
+                    android:layout_marginLeft="@dimen/DIMEN_8DP"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_place_holder_52_52" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/DIMEN_66DP"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_16DP"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textSize="@dimen/DIMEN_12SP"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_user_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/DIMEN_4DP"
+                        android:layout_marginRight="@dimen/DIMEN_16DP"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/DIMEN_4DP"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="@color/colorBlack3E4758"
+                        android:textSize="@dimen/DIMEN_10SP"
+                        tools:text="邀请你加入变现云课，一起学习" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="长按识别二维码，领7天无限畅学会员卡"
+                        android:textColor="@color/colorBlack3E4758"
+                        android:textSize="@dimen/DIMEN_10DP"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

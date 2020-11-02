@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/DIMEN_20DP"
+    tools:ignore="RtlHardcoded,RtlSymmetry,ContentDescription">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="下载更新"
+        android:textColor="@color/colorBlack3B4059"
+        android:textSize="@dimen/DIMEN_16DP" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginBottom="@dimen/DIMEN_10DP"
+        android:layout_marginTop="@dimen/DIMEN_30DP">
+
+        <ImageView
+            android:id="@+id/notificationImage"
+            android:layout_width="@dimen/DIMEN_45DP"
+            android:layout_height="@dimen/DIMEN_45DP"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10DP"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_3DP"
+            android:layout_toRightOf="@+id/notificationImage">
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/DIMEN_3DP"
+                android:text="新版本下载"
+                android:textColor="@color/colorBlack3B4059"
+                android:textSize="@dimen/DIMEN_12DP"/>
+
+            <ProgressBar
+                android:id="@+id/pbBar"
+                style="@style/ProgressBar_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProgress"
+                android:layout_marginTop="@dimen/DIMEN_12DP"
+                android:paddingLeft="@dimen/DIMEN_3DP" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

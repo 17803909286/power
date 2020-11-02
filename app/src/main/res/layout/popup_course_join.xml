@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/DIMEN_32DP"
+    android:background="@drawable/back_popup"
+    android:minHeight="@dimen/DIMEN_176DP"
+    android:orientation="vertical"
+    tools:ignore="Suspicious0dp,InefficientWeight,
+    HardcodedText,RtlSymmetry,RtlHardcoded,TextFields">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/DIMEN_24DP"
+        android:text="确认报名信息?"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_14DP"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_course_join_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_24DP"
+        android:layout_marginTop="-12dp"
+        android:text="姓名：xxxxxxx "
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_14DP" />
+
+    <TextView
+        android:id="@+id/tv_course_join_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_24DP"
+        android:layout_marginTop="@dimen/DIMEN_5DP"
+        android:text="电话：xxx xxxx xxxx"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_14DP" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_24DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_creat_cancel"
+            android:layout_width="@dimen/DIMEN_132DP"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:background="@drawable/back_button_blue_cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+        <Button
+            android:id="@+id/button_creat_commit_sure"
+            android:layout_width="@dimen/DIMEN_132DP"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:background="@drawable/back_button_blue_sure"
+            android:text="确认报名"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_16DP" />
+    </LinearLayout>
+</LinearLayout>

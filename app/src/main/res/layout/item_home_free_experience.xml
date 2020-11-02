@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/DIMEN_10DP"
+    android:paddingBottom="@dimen/DIMEN_10DP"
+    android:paddingLeft="@dimen/DIMEN_6DP"
+    android:paddingRight="@dimen/DIMEN_6DP"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_course_icon"
+        android:layout_width="@dimen/DIMEN_165DP"
+        android:layout_height="@dimen/DIMEN_93DP"
+        android:src="@drawable/icon_place_holder_93_165"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_course_title"
+        android:layout_width="@dimen/DIMEN_165DP"
+        android:layout_height="wrap_content"
+        tools:text="如何微调产品，盘活产品体系"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:textColor="@color/colorBlack1A1F28"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

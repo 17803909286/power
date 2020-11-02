@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:contentDescription="@null"-->
+    <!--android:src="#60000000" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlackF3F4F6">
+            <ListView
+                android:id="@+id/pop_listview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_52DP"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/colorBlack79808B"
+                android:textSize="16sp"
+                android:layout_marginTop="@dimen/DIMEN_12DP"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

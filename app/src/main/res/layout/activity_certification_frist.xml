@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="实名认证" />
+
+
+    <View
+        style="@style/line_1"
+        android:layout_marginLeft="@dimen/DIMEN_16DP" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_20DP"
+        android:layout_marginRight="@dimen/DIMEN_20DP"
+        android:layout_marginBottom="@dimen/DIMEN_20DP"
+        android:background="@drawable/icon_id_card_bg">
+
+        <ImageView
+            android:id="@+id/iv_id_card_front"
+            android:layout_width="291dp"
+            android:layout_height="153dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/DIMEN_30DP"
+            android:background="@drawable/icon_id_card_front" />
+        <ImageView
+            android:id="@+id/iv_delete_front"
+            android:layout_width="@dimen/DIMEN_12DP"
+            android:layout_height="@dimen/DIMEN_12DP"
+            android:layout_alignTop="@+id/iv_id_card_front"
+            android:layout_alignLeft="@+id/iv_id_card_front"
+            android:background="@drawable/icon_delete_img"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:gravity="center"
+        android:text="@string/personverify_front"
+        android:textSize="@dimen/DIMEN_17SP"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:layout_marginLeft="@dimen/DIMEN_20DP"
+        android:layout_marginRight="@dimen/DIMEN_20DP"
+        android:layout_marginBottom="@dimen/DIMEN_20DP"
+
+        android:background="@drawable/icon_id_card_bg">
+
+        <ImageView
+            android:id="@+id/iv_id_card_back"
+            android:layout_width="291dp"
+            android:layout_height="153dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/DIMEN_30DP"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_id_card_front" />
+        <ImageView
+            android:id="@+id/iv_delete_back"
+            android:layout_width="@dimen/DIMEN_12DP"
+            android:layout_height="@dimen/DIMEN_12DP"
+            android:layout_alignTop="@+id/iv_id_card_back"
+            android:layout_alignLeft="@+id/iv_id_card_back"
+            android:background="@drawable/icon_delete_img"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginVertical="@dimen/DIMEN_20DP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:gravity="center"
+        android:text="@string/personverify_back"
+        android:textSize="@dimen/DIMEN_17SP"/>
+
+    <TextView
+        android:id="@+id/tv_card_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+
+        android:layout_marginBottom="@dimen/DIMEN_48DP"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_162DP"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/DIMEN_16DP"
+    android:paddingTop="@dimen/DIMEN_12DP"
+    android:paddingRight="@dimen/DIMEN_16DP"
+    android:paddingBottom="@dimen/DIMEN_12DP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_92DP"
+            android:layout_height="@dimen/DIMEN_138DP">
+
+            <ImageView
+                android:id="@+id/iv_course_icon"
+                android:layout_width="@dimen/DIMEN_92DP"
+                android:layout_height="@dimen/DIMEN_138DP"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_place_holder_92_138_round" />
+
+            <ImageView
+                android:id="@+id/iv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_album_discounts"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_8DP">
+
+            <TextView
+                android:id="@+id/tv_course_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_16SP"
+                android:textStyle="bold"
+                tools:text="如何“毁掉”竞争对手的人才" />
+
+            <TextView
+                android:id="@+id/tv_course_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_course_title"
+                android:layout_marginTop="@dimen/DIMEN_8DP"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack79808B"
+                android:textSize="@dimen/DIMEN_12SP"
+                tools:text="如何突现突袭、越轨发展" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/DIMEN_25DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_course_label"
+                    android:layout_width="@dimen/DIMEN_44DP"
+                    android:layout_height="@dimen/DIMEN_20DP"
+                    android:background="@drawable/shape_home_label_ffb339_bg"
+                    android:gravity="center"
+                    android:textColor="@color/colorYellowFFB339"
+                    android:textSize="12sp"
+                    android:visibility="visible"
+                    tools:text="免费" />
+
+                <TextView
+                    android:id="@+id/tv_course_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"
+                    android:gravity="center"
+                    android:text="￥199.00/年"
+                    android:textColor="@color/colorYellowFFB339"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_course_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_12SP"
+                    android:visibility="visible"
+                    tools:text="￥299.00" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_course_size"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlackC2C8D0"
+                    android:textSize="@dimen/DIMEN_12SP"
+                    tools:text="更新至21节/共26节" />
+
+                <TextView
+                    android:id="@+id/tv_play_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_play_count_round_gray"
+                    android:drawablePadding="@dimen/DIMEN_4DP"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/DIMEN_4DP"
+                    android:textColor="@color/colorBlackC2C8D0"
+                    android:textSize="@dimen/DIMEN_12SP"
+                    tools:text="2.1万" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

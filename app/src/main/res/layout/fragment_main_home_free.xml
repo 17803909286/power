@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_159DP"
+    tools:context=".ui.fragment.MainHomeFreeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_52DP"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_main_home_free_shadow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_135DP">
+
+        <ImageView
+            android:id="@+id/iv_course"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_135DP"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_place_holder_288_167_round" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_28DP"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/icon_main_home_free_bg">
+
+            <TextView
+                android:id="@+id/tv_play_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_8DP"
+                android:drawableLeft="@drawable/icon_play_count_round"
+                android:drawablePadding="@dimen/DIMEN_4DP"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_12SP"
+                tools:text="3.5万" />
+
+            <TextView
+                android:id="@+id/tv_courseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_8DP"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_12SP"
+                tools:text="05:21" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

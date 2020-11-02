@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 整个背景色-->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!-- 底部圆角,参数是固定的 -->
+    <item
+        android:width="24dp"
+        android:height="4dp"
+        android:gravity="bottom|center_horizontal">
+        <shape>
+            <solid android:color="@color/colorBlue0D7EF9"/>
+        </shape>
+    </item>
+</layer-list>

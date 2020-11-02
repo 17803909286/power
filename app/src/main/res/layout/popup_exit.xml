@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/DIMEN_32DP"
+    android:background="@drawable/back_popup"
+    android:minHeight="@dimen/DIMEN_126DP"
+    android:orientation="vertical"
+    tools:ignore="Suspicious0dp,InefficientWeight,
+    HardcodedText,RtlSymmetry,RtlHardcoded,TextFields">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/DIMEN_24DP"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_14DP"
+        android:textStyle="bold"
+        tools:text="确定退出应用吗?" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_creat_cancel"
+            android:layout_width="@dimen/DIMEN_132DP"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:background="@drawable/back_button_blue_cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+        <Button
+            android:id="@+id/button_creat_commit_sure"
+            android:layout_width="@dimen/DIMEN_132DP"
+            android:layout_height="@dimen/DIMEN_44DP"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:background="@drawable/back_button_blue_sure"
+            android:text="@string/sure"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_16DP" />
+    </LinearLayout>
+</LinearLayout>

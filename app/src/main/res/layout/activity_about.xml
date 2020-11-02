@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,HardcodedText,
+    ContentDescription,RelativeOverlap,UselessParent,SpUsage">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="关于" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/line_main_mine">
+
+        <TextView
+            android:id="@+id/tv_title_tip"
+            style="@style/text_mine"
+            android:textSize="@dimen/DIMEN_16DP"
+            tools:text="关于动力学社app" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_0_5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        style="@style/line_main_mine">
+
+        <TextView
+            style="@style/text_mine"
+            android:text="用户协议"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_0_5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_secrect"
+        style="@style/line_main_mine">
+
+        <TextView
+            style="@style/text_mine"
+            android:text="隐私协议"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_0_5" />
+
+    <RelativeLayout style="@style/line_main_mine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本号"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_16DP" />
+
+        <TextView
+            android:id="@+id/tv_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_14DP"
+            tools:text="当前版本1.0.0" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_0_5" />
+
+</LinearLayout>

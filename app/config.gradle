@@ -1,0 +1,39 @@
+android {
+    productFlavors {
+        normal {
+            applicationId "com.power.home"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "66121c04b4d58d49b80f464b", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "a546808fb79aecf07d64bd93", //暂时填写默认值即可.
+                    channelName  : "android", //渠道.
+            ]
+        }
+        /*future_beta {
+            applicationId "beta.future.direction"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "443e8acfbe41c022d0aed99c", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "641823fb5ae8f93ae02e368d", //暂时填写默认值即可.
+                    channelName  : "beta", //渠道.
+            ]
+        }*/
+
+    }
+    /*sourceSets {
+        normal.res.srcDirs = ['src/main/res']
+        youth_beta.res.srcDirs = ['src/main/res_beta']
+    }*/
+
+    /*官方渠道(android)
+    腾讯应用宝(android_tencent)
+    阿里应用分发平台（豌豆荚(android_wandoujia)、PP助手（android_pp））
+    360手机助手(android_360)
+    百度手机助手(android_baidu)
+    华为应用市场(android_huawei)
+    小米应用市场(android_xiaomi)
+    OPPO应用市场(android_oppo)
+    VIVO应用商店(android_vivo)
+    三星应用商店(android_samsung)*/
+
+}

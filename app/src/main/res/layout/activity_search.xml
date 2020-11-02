@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_32DP"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:layout_weight="1"
+            android:background="@color/colorWhiteF5F7FA"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_16DP"
+                android:layout_height="@dimen/DIMEN_16DP"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/DIMEN_12DP"
+                android:src="@drawable/search_gray" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_4DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:background="@null"
+                android:hint="请输入要搜索的内容"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:padding="@dimen/DIMEN_2DP"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textColorHint="@color/colorBlackC2C8D0"
+                android:textSize="@dimen/DIMEN_12SP" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_16DP"
+            android:text="@string/cancel"
+            android:textColor="@color/colorBlack79808B"
+            android:textSize="@dimen/DIMEN_12SP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_words"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_16DP"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_30DP">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/DIMEN_16DP"
+                        android:gravity="center"
+                        android:text="历史搜索"
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textSize="@dimen/DIMEN_14SP"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_clear_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/DIMEN_16DP"
+                        android:drawableLeft="@drawable/icon_history"
+                        android:drawablePadding="@dimen/DIMEN_2DP"
+                        android:gravity="center"
+                        android:text="清空"
+                        android:textColor="@color/colorBlackC2C8D0"
+                        android:textSize="@dimen/DIMEN_12SP" />
+
+
+                </RelativeLayout>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tabLayout_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_16DP">
+
+                </com.zhy.view.flowlayout.TagFlowLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_40DP"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_30DP">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/DIMEN_16DP"
+                        android:gravity="center"
+                        android:text="热门搜索"
+                        android:textColor="@color/colorBlack1A1F28"
+                        android:textSize="@dimen/DIMEN_14SP"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_16DP">
+
+                </com.zhy.view.flowlayout.TagFlowLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

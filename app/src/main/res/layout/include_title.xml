@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_44DP"
+    android:background="@color/colorWhite"
+    tools:ignore="ContentDescription,UselessParent,RtlHardcoded,RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="@dimen/DIMEN_60DP"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/DIMEN_14DP">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_back_black"
+                android:drawablePadding="@dimen/DIMEN_4DP"
+                tools:text="@string/back"
+                android:textColor="@color/colorBlack1D2228"
+                android:textSize="@dimen/DIMEN_14DP" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack1D2228"
+            android:textSize="@dimen/DIMEN_16DP"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_12DP"
+            android:textColor="@color/colorBlack1D2228"
+            android:textSize="@dimen/DIMEN_14DP"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_280DP"
+    android:layout_height="@dimen/DIMEN_60DP"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/DIMEN_16DP"
+    android:paddingTop="@dimen/DIMEN_12DP"
+    android:paddingRight="@dimen/DIMEN_16DP">
+
+    <TextView
+        android:id="@+id/tv_course_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_course_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="课程标题课程标题课程标题课程标题"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_course_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_3DP"
+        android:src="@drawable/icon_jzvd_lock"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_14SP"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

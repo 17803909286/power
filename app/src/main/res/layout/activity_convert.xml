@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarRightText="兑换记录"
+        app:MytitleBarRightTextColor="@color/colorBlack1A1F28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:text="输入兑换码"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_28SP"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_convert_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_32DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:background="@color/colorWhiteF5F7FA"
+        android:hint="输入您的兑换码"
+        android:inputType="text"
+        android:maxLength="10"
+        android:paddingLeft="@dimen/DIMEN_12DP"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textColorHint="@color/colorBlackC2C8D0"
+        android:textSize="@dimen/DIMEN_16SP" />
+
+    <Button
+        android:id="@+id/button_convert_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_40DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:background="@drawable/back_button_enable"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold" />
+
+</LinearLayout>

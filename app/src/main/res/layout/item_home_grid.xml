@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/DIMEN_12DP">
+
+    <ImageView
+        android:id="@+id/iv_course_icon"
+        android:layout_width="@dimen/DIMEN_48DP"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:src="@drawable/icon_place_holder_40_40"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="全部课程全部课程全部课程全部课程"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack1A1F28"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

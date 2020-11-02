@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="修改手机绑定" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_60DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:hint="请输入原手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="0.5dp"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textColorHint="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_16SP" />
+
+        <ImageView
+            android:id="@+id/iv_edit_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_16DP"
+            android:src="@drawable/icon_edit_clear"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_0_5"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP" />
+
+    <Button
+        android:id="@+id/button_bind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_40DP"
+        android:layout_marginRight="@dimen/DIMEN_12DP"
+        android:background="@drawable/back_button_enable"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="绑定新手机号"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold" />
+
+</LinearLayout>

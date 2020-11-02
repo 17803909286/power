@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="绑定银行卡" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_24DP"
+        android:background="@color/colorBlueCFE5FE"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:text="请输入和实名认证一致的银行卡"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_16DP"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center_vertical"
+                    android:text="卡号"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_bank_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入卡号"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textColorHint="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    tools:text="6217  0022  0044  0334  955" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_16DP"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center_vertical"
+                    android:text="持卡人"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_bank_person_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入持卡人姓名"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textColorHint="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    tools:text="张三" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_16DP"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center_vertical"
+                    android:text="身份证"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_idcard_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:digits="0123456789 X"
+                    android:gravity="right|center"
+                    android:hint="请输入身份证号"
+                    android:inputType="numberSigned"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textColorHint="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    tools:text="370100199203103316" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_16DP"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center_vertical"
+                    android:text="银行名称"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入银行名称"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textColorHint="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    tools:text="中国建设银行" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_16DP"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center_vertical"
+                    android:text="银行卡预留手机号"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_bank_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textColorHint="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    tools:text="18364883258" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_56DP"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_16DP"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center_vertical"
+                    android:text="短信验证码"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_bank_verify_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="@dimen/DIMEN_16DP"
+                    android:paddingRight="@dimen/DIMEN_16DP"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack1A1F28"
+                    android:textColorHint="@color/colorBlack79808B"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    tools:text="1111" />
+
+                <TextView
+                    android:id="@+id/tv_bank_get_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/DIMEN_16DP"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/DIMEN_14SP" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/button_convert_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_16DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:layout_marginBottom="@dimen/DIMEN_32DP"
+        android:background="@drawable/shape_button_enable"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="确认添加"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_211DP">
+
+        <com.power.home.ui.widget.MyJzPlayer
+            android:id="@+id/mJC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--<TextView
+            android:id="@+id/tv_audio_video_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_audio_video_change_bg"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp"
+            android:text="音频"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_toGroth"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:layout_weight="2"
+            android:background="@drawable/shape_course_player_one_bg"
+            android:gravity="center"
+            android:text="每天1元,动力营课程全年免费看"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/tv_receive"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_26DP"
+            android:layout_marginRight="@dimen/DIMEN_16DP"
+            android:layout_weight="1"
+            android:background="@drawable/shape_course_player_two_bg"
+            android:gravity="center"
+            android:text="领取落地工具包"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingTop="@dimen/DIMEN_16DP"
+        android:paddingRight="@dimen/DIMEN_16DP">
+
+        <TextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack1A1F28"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="父母如何让成为孩子的榜样，让孩子健康快乐的成长！" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/DIMEN_16DP"
+            android:background="@drawable/shape_course_player_share_bg"
+            android:paddingLeft="@dimen/DIMEN_8DP"
+            android:paddingTop="@dimen/DIMEN_4DP"
+            android:paddingRight="@dimen/DIMEN_8DP"
+            android:paddingBottom="@dimen/DIMEN_4DP"
+            android:text="分享"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/DIMEN_12SP" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_16DP"
+        android:paddingTop="@dimen/DIMEN_8DP"
+        android:paddingRight="@dimen/DIMEN_16DP"
+        android:paddingBottom="@dimen/DIMEN_16DP"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_course_subtitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:gravity="bottom"
+            tools:text="父母如何让成为孩子的榜样，让孩子健康快乐的成长！" />
+
+        <TextView
+            android:id="@+id/tv_course_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorBlackC2C8D0"
+            android:textSize="@dimen/DIMEN_10SP"
+            tools:text="更新至99节/共99节"
+            android:gravity="bottom"
+            android:layout_marginLeft="@dimen/DIMEN_12DP"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        android:background="@color/colorWhite"
+        app:layout_collapseMode="pin"
+        app:tabBackground="@drawable/tab_player_selector_bg"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance"
+        app:tabTextColor="@color/colorBlack1A1F28" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlackDCE2E8" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_48DP"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_album_buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorYellowFFB339"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_album_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="购买专辑 "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/DIMEN_16SP"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_album_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/DIMEN_16SP"
+                    android:visibility="gone"
+                    tools:text="¥99" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_growth_buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorBlue0D7EF9"
+                android:gravity="center"
+                android:text="加入动力营免费学"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_16SP"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

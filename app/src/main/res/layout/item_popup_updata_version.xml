@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/DIMEN_32DP"
+        android:layout_marginRight="@dimen/DIMEN_32DP"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_150DP"
+            android:src="@drawable/icon_updata_version"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_updata_version_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="新版本升级"
+                android:textColor="@color/colorBlue0D7EF9"
+                android:textSize="@dimen/DIMEN_16SP"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/DIMEN_24DP"/>
+
+            <TextView
+                android:id="@+id/tv_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                tools:text="更新内容\n1.新增巴拉巴拉\n2.优化什么什么\n3.新建什么什么之类的。"
+                android:textSize="@dimen/DIMEN_12SP"
+                android:textColor="@color/colorBlack1A1F28"
+                android:layout_marginTop="@dimen/DIMEN_12DP"
+                android:lineSpacingExtra="@dimen/DIMEN_5DP"/>
+
+            <TextView
+                android:id="@+id/tv_updata"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_44DP"
+                android:text="立即升级"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_16SP"
+                android:background="@drawable/shape_updata_version_start_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/DIMEN_24DP"
+                android:layout_marginBottom="@dimen/DIMEN_16DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/DIMEN_33DP"
+            android:layout_height="@dimen/DIMEN_33DP"
+            android:src="@drawable/icon_updata_version_close"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:layout_marginTop="@dimen/DIMEN_60DP"/>
+
+
+        
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

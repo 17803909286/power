@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.power.home.ui.widget.MyTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        app:MytitleBarLeftImage="@drawable/icon_title_back_black"
+        app:MytitleBarTitle="每日活动" />
+
+    <TextView
+        android:id="@+id/tv_everyday_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_16DP"
+        android:layout_marginTop="@dimen/DIMEN_35DP"
+        android:layout_marginRight="@dimen/DIMEN_16DP"
+        android:gravity="center"
+        android:textColor="@color/colorBlack1A1F28"
+        android:textSize="@dimen/DIMEN_18SP"
+        android:textStyle="bold"
+        tools:text="恭喜您！获得动力营名额一个" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_everyday_result_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/DIMEN_36DP"
+            android:paddingBottom="@dimen/DIMEN_80DP"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_everyday_result_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换码:918821"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <TextView
+                android:id="@+id/tv_everyday_result_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_10DP"
+                android:text="复制"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/DIMEN_14SP"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_everyday_result_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/DIMEN_24DP"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_160DP"
+                android:layout_height="@dimen/DIMEN_160DP"
+                android:src="@drawable/icon_everyday_result_course" />
+
+            <TextView
+                android:id="@+id/tv_everyday_result_course_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"
+                android:layout_marginTop="@dimen/DIMEN_24DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:gravity="center"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_14SP"
+                tools:text="你已获得《xxx》专辑课程，赶紧去学习吧！" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_everyday_result_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/DIMEN_24DP"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_16DP"
+                android:layout_marginRight="@dimen/DIMEN_16DP"
+                android:gravity="center"
+                android:text="你已获得线下课程名额一个，赶快添加客服微信一起来学习吧！"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <ImageView
+                android:id="@+id/iv_everyday_result_code"
+                android:layout_width="@dimen/DIMEN_160DP"
+                android:layout_height="@dimen/DIMEN_160DP"
+                android:layout_marginTop="@dimen/DIMEN_32DP"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_24DP"
+                android:gravity="center"
+                android:text="客服微信 \n(长按保存图片)"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_everyday_result_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_marginLeft="@dimen/DIMEN_48DP"
+        android:layout_marginTop="@dimen/DIMEN_40DP"
+        android:layout_marginRight="@dimen/DIMEN_48DP"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="去学习"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/DIMEN_16SP"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>

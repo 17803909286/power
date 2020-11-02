@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/DIMEN_319DP"
+    android:layout_height="@dimen/DIMEN_194DP"
+    android:background="@drawable/icon_home_daily_business_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:layout_marginLeft="@dimen/DIMEN_20DP"
+        android:layout_marginBottom="@dimen/DIMEN_28DP"
+        android:layout_marginRight="@dimen/DIMEN_20DP">
+
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_97DP"
+            android:layout_height="@dimen/DIMEN_145DP"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/iv_course_icon"
+                android:layout_width="@dimen/DIMEN_97DP"
+                android:layout_height="@dimen/DIMEN_145DP"
+                android:src="@drawable/icon_place_holder_92_138_round"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tv_play_amount"
+                android:layout_width="@dimen/DIMEN_97DP"
+                android:layout_height="@dimen/DIMEN_16DP"
+                tools:text="2.1万"
+                android:drawableLeft="@drawable/icon_course_white_play"
+                android:drawablePadding="@dimen/DIMEN_4DP"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/DIMEN_10SP"
+                android:background="@drawable/icon_course_playcount_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/DIMEN_4DP"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_8DP">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第"
+                    android:textSize="@dimen/DIMEN_10SP"
+                    android:textColor="@color/colorBlack79808B"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_course_phase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="21"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textColor="@color/colorBlue0D7EF9"
+                    android:gravity="center"
+                    android:background="@color/colorWhiteF5F7FA"
+                    android:layout_marginLeft="@dimen/DIMEN_4DP"
+                    android:layout_marginRight="@dimen/DIMEN_4DP"
+                    android:padding="@dimen/DIMEN_2DP"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="期"
+                    android:textSize="@dimen/DIMEN_10SP"
+                    android:textColor="@color/colorBlack79808B"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_course_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="如何面对人生的最大挫折，你准备好了吗？"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/colorBlack1A1F28"
+                android:textSize="@dimen/DIMEN_14SP"
+                android:layout_marginTop="@dimen/DIMEN_32DP"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_course_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="如何突现突袭、越轨发展"
+                android:textSize="@dimen/DIMEN_12SP"
+                android:textColor="@color/colorBlack79808B"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_below="@+id/tv_course_title"
+                android:layout_marginTop="@dimen/DIMEN_8DP"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_course_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="05:21"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/DIMEN_12SP"
+                android:textColor="@color/colorBlackC2C8D0"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

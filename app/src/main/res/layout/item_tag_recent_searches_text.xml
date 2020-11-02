@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/DIMEN_8DP"
+        android:layout_marginLeft="@dimen/DIMEN_8DP"
+        android:layout_marginTop="@dimen/DIMEN_4DP"
+        android:layout_marginBottom="@dimen/DIMEN_4DP"
+        android:background="@drawable/shape_recent_searches_tag_bg"
+        android:paddingLeft="@dimen/DIMEN_12DP"
+        android:paddingTop="@dimen/DIMEN_4DP"
+        android:paddingRight="@dimen/DIMEN_12DP"
+        android:paddingBottom="@dimen/DIMEN_4DP"
+        android:textColor="@color/colorBlack79808B"
+        android:textSize="@dimen/DIMEN_12SP"
+        tools:text="教你如何变">
+
+    </TextView>
+</LinearLayout>

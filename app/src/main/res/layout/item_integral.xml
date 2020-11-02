@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_56DP"
+    android:layout_marginLeft="@dimen/DIMEN_16DP"
+    android:layout_marginRight="@dimen/DIMEN_16DP"
+    android:gravity="center_vertical"
+    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定微信"
+            android:textColor="@color/colorBlack181823"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/iv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:text="2019-10-01 10:00"
+            android:textColor="@color/colorBlack6B737A"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="+10.00"
+        android:textColor="@color/colorBlack6B737A"
+        android:textSize="@dimen/DIMEN_18SP"
+        android:textStyle="bold" />
+</RelativeLayout>
