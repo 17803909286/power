@@ -306,9 +306,6 @@ public interface ApiService {
     Observable<BaseBean<TokenBean>> getUploadToken();
     //获取七牛云tocken
     @POST("/api/auth/appUserAssets/realNameAuth/v2")
-    Observable<BaseBean<EmptyBean>> getPersonVerifyResult(@Query("realName") String realName,@Query("idCartNum") String idCardNum,
-                                                          @Query("userId") int userId,@Query("frontUrl") String frontUrl,
-                                                          @Query("backUrl") String backUrl, @Query("address") String addrsss,
-                                                          @Query("begin") String begin,@Query("end") String end);
+    Observable<BaseBean<CertificationBean>> getPersonVerifyResult(@Body RequestBody body);
 
 }

@@ -42,6 +42,7 @@ public class ToastView {
 		textView.setGravity(Gravity.CENTER);
 		textView.setLayoutParams(layoutParams);
 		toast.setView(linearLayout);
+
 		//4.0版本才能使用图片读属性
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
 			textView.setAlpha(0.9f);
@@ -71,6 +72,7 @@ public class ToastView {
 			textView.setAlpha(0.9f);
 	    }
 		toast.show();
+
 	}
 
 	

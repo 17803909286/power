@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scwang.smart:refresh-header-material:2.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-refresh-header-material-2.0.0.aar/5b259c341d27f3882410bd572154c096/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-refresh-header-material-2.0.0.aar/5b259c341d27f3882410bd572154c096/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-refresh-header-material-2.0.0.aar/5b259c341d27f3882410bd572154c096/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-refresh-header-material-2.0.0.aar/5b259c341d27f3882410bd572154c096/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scwang.smart/refresh-header-material/2.0.0/fcc3fa174737704c497d0ee9dbb901cf148d911d/refresh-header-material-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

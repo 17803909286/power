@@ -101,6 +101,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
     private File file0;
     private File file1;
     private int point = 0;// 0正面 1反面
+    private CertificationBean mCertificationBean;
     private Configuration configuration;
     @Override
     public int setLayout() {
@@ -376,19 +377,30 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
     }
 
     @Override
-    public void getPersonVerifyInfoSuccess(EmptyBean emptyBean) {
+    public void getPersonVerifyInfoSuccess(CertificationBean certificationBean) {
 
         loadingDailog.hide();
-        if(emptyBean == null){
+        if(certificationBean == null){
             UIUtil.showToastSafe("认证失败");
             return;
         }
-        UIUtil.showToastSafe("认证成功");
-        finish();
+        Log.i("CertificationBeanid：",certificationBean.getId());
+        Intent intent = new Intent(UIUtil.getContext(), CertificationTwoActivity.class);
+        intent.putExtra(Constant.id, certificationBean.getId());
+        startActivity(intent);
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+
     }
 
     private void uploadPersonInfo(){
         String imageUrl = SharePreferencesUtils.getUploadBaseUrl();
+        Log.i("uploadImageUrl111：",imageUrl);
         String front = imageUrl + "/" + frontImageUrl;
         String back = imageUrl +"/" + backImageUrl;
         Log.i("personinfoback：",back);
@@ -478,13 +490,17 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
     @Override
     public void onFailure(Object reasonObj) {
         Log.i("personinfofail：",reasonObj.toString());
-        UIUtil.showToastSafe("认证失败");
         loadingDailog.hide();
+        UIUtil.showToastSafe("认证失败");
+
+
+
     }
 
 
     @Override
     public void uploadPerSonVerifyComplete(String key) {
+
 
         if(!loadingDailog.isShowing()){
             return;
@@ -493,6 +509,8 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
             loadingDailog.hide();
             frontImageUrl = null;
             backImageUrl = null;
+            SharePreferencesUtils.setUploadImageBaseUrl("");
+            SharePreferencesUtils.setUploadToken("");
             UIUtil.showToastSafe("认证失败");
             return;
 

@@ -193,7 +193,9 @@ public class UIUtil {
             });
         }
     }
+   public void cancel(){
 
+   }
     private static void showToast(String str) {
         if (App.getApplication() != null) {
             ToastView toastView = new ToastView();

@@ -38,7 +38,7 @@ public class UploadIdCardPresenter extends BasePresenter<UploadIdCardContract.IU
 
     public void getUploadToken(){
         mModel.getUploadToken().compose(RxHttpReponseCompat.compatResult())
-                .subscribe(new ProgressSubcriber<TokenBean>(mContext,mView) {
+                .subscribe(new ProgressSubcriber<TokenBean>(mContext,mView,true) {
                     @Override
                     public void onNext(@NonNull TokenBean tokenBean) {
                         if(hasView()){
@@ -57,11 +57,11 @@ public class UploadIdCardPresenter extends BasePresenter<UploadIdCardContract.IU
 
     public  void  personVerify(String realName,String idCardNum,int userid,String frontUrl,String backUrl,String address,String begin,String end){
         mModel.getPersonVerifyInfoResult(realName,idCardNum,userid,frontUrl,backUrl,address,begin,end).compose(RxHttpReponseCompat.compatResult())
-        .subscribe(new ProgressSubcriber<EmptyBean>(mContext,mView) {
+        .subscribe(new ProgressSubcriber<CertificationBean>(mContext,mView,true) {
             @Override
-            public void onNext(@NonNull EmptyBean emptyBean) {
+            public void onNext(@NonNull CertificationBean certificationBean) {
                 if(hasView()){
-                    mView.getPersonVerifyInfoSuccess(emptyBean);
+                    mView.getPersonVerifyInfoSuccess(certificationBean);
                 }
             }
 

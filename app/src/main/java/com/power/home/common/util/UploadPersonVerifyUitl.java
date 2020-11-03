@@ -1,5 +1,7 @@
 package com.power.home.common.util;
 
+import android.util.Log;
+
 import com.qiniu.android.http.ResponseInfo;
 import com.qiniu.android.storage.Configuration;
 import com.qiniu.android.storage.Recorder;
@@ -42,6 +44,7 @@ public class UploadPersonVerifyUitl {
        uploadManager.put(file, own, token, new UpCompletionHandler() {
            @Override
            public void complete(String key, ResponseInfo info, JSONObject response) {
+               Log.i("personinfofail：",response.toString());
                if(response == null){
                    if(listener != null){
                        listener.uploadPerSonVerifyComplete(null);

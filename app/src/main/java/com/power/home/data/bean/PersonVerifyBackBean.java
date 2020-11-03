@@ -33,11 +33,11 @@ public class PersonVerifyBackBean {
         this.side = side;
     }
 
-    public int getOrderid() {
+    public String getOrderid() {
         return orderid;
     }
 
-    public void setOrderid(int orderid) {
+    public void setOrderid(String orderid) {
         this.orderid = orderid;
     }
 
@@ -45,7 +45,7 @@ public class PersonVerifyBackBean {
     private String department;
     private String end;
     private String side;
-    private int orderid;
+    private String orderid;
 
     @Override
     public String toString() {

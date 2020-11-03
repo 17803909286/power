@@ -1,6 +1,7 @@
 package com.power.home.data;
 
 
+import com.power.home.common.util.ParamUtil;
 import com.power.home.common.util.SharePreferencesUtils;
 import com.power.home.data.bean.BaseBean;
 import com.power.home.data.bean.CertificationBean;
@@ -12,6 +13,7 @@ import com.power.home.presenter.contract.UploadIdCardContract;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import io.reactivex.Observable;
 import okhttp3.MediaType;
@@ -48,8 +50,19 @@ public class UploadIdCardModel implements UploadIdCardContract.IUploadIdCardMode
     }
 
     @Override
-    public Observable<BaseBean<EmptyBean>> getPersonVerifyInfoResult(String realName, String idCardNum, int userid, String frontUrl, String backUrl, String address, String begin, String end) {
-        return mApiService.getPersonVerifyResult(realName,idCardNum,userid,frontUrl,backUrl,address,begin,end);
+    public Observable<BaseBean<CertificationBean>> getPersonVerifyInfoResult(String realName, String idCardNum, int userid, String frontUrl, String backUrl, String address, String begin, String end) {
+
+        TreeMap<String, Object> map = new TreeMap<>();
+        map.put("realName",realName);
+        map.put("idCardNum",idCardNum);
+        map.put("userId",userid);
+        map.put("frontUrl",frontUrl);
+        map.put("backUrl",backUrl);
+        map.put("address",address);
+        map.put("begin",begin);
+        map.put("end",end);
+        return mApiService.getPersonVerifyResult(ParamUtil.getBody(map));
+
     }
 
     private RequestBody toRequestBody(String value) {

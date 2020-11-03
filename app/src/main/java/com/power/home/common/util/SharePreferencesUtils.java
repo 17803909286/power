@@ -3,6 +3,8 @@ package com.power.home.common.util;
 import com.blankj.utilcode.util.SPUtils;
 import com.power.home.common.Constant;
 
+import org.bouncycastle.asn1.esf.SPuri;
+
 /**
  * 封装的SP 轻量级存储
  */
@@ -14,6 +16,7 @@ public class SharePreferencesUtils {
 
     public static String getToken() {
         return SPUtils.getInstance(Constant.userParts).getString("token");
+
     }
 
     public static void setUploadToken(String token){

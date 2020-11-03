@@ -19,7 +19,7 @@ public interface UploadIdCardContract {
     interface IUploadIdCardModel {
         Observable<BaseBean<CertificationBean>> uploadIdCard(File file0, File file1, String idCardNum, String realName);
         Observable<BaseBean<TokenBean>> getUploadToken();
-        Observable<BaseBean<EmptyBean>> getPersonVerifyInfoResult(String realName,String idCardNum,int userid,String frontUrl,String backUrl,String address,String begin,String end);
+        Observable<BaseBean<CertificationBean>> getPersonVerifyInfoResult(String realName,String idCardNum,int userid,String frontUrl,String backUrl,String address,String begin,String end);
 
     }
 
@@ -27,6 +27,6 @@ public interface UploadIdCardContract {
     interface View extends BaseView {
         void uploadIdCardSuccess(CertificationBean certificationBean);
         void getUploadTokenBeanSuccess(TokenBean tokenBean);
-        void getPersonVerifyInfoSuccess(EmptyBean emptyBean);
+        void getPersonVerifyInfoSuccess(CertificationBean emptyBean);
     }
 }
