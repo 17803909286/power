@@ -1,5 +1,7 @@
 package com.power.home.ui.activity;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -88,6 +90,8 @@ public class StudyRecordsActivity extends BaseActivity<StudyRecordPresenter> imp
 
     @Override
     public void getStudyProgressSuccess(List<StudyRecordsBean> studyRecordsBeans) {
+
+
         if (refreshLayout != null) {
             refreshLayout.finishRefresh();
         }

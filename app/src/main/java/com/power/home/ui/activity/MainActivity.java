@@ -10,6 +10,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -18,6 +19,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.power.home.R;
 import com.power.home.common.Constant;
+import com.power.home.common.MyFragmentManager;
 import com.power.home.common.util.AppInnerDownLoder;
 import com.power.home.common.util.PopuUtil;
 import com.power.home.common.util.SharePreferencesUtils;
@@ -168,6 +170,19 @@ public class MainActivity extends BaseActivity<VersionPresenter> implements
         FragmentTransaction fragmentTransaction = manager.beginTransaction();
         //显示之前将所有的fragment都隐藏起来,在去显示我们想要显示的fragment
         hideFragment(fragmentTransaction);
+        if(type==Constant.TAB_HOME || type == Constant.TAB_FIND){
+            if(StringUtil.isNotNullString(SharePreferencesUtils.getFloatStatus())){
+                if (null != FloatingView.get().getView()) {
+                    FloatingView.get().getView().setVisibility(View.VISIBLE);
+                }
+            }
+
+        }else{
+            if (null != FloatingView.get().getView()) {
+                FloatingView.get().getView().setVisibility(View.GONE);
+            }
+        }
+
         switch (type) {
             case Constant.TAB_HOME://成长
                 if (homeFragment == null) {
@@ -176,6 +191,7 @@ public class MainActivity extends BaseActivity<VersionPresenter> implements
                 } else {
                     fragmentTransaction.show(homeFragment);
                 }
+                MyFragmentManager.getInstance().setCurrentFragment(homeFragment);
                 break;
 
             case Constant.TAB_FIND://发现
@@ -185,6 +201,7 @@ public class MainActivity extends BaseActivity<VersionPresenter> implements
                 } else {
                     fragmentTransaction.show(mainK12Fragment);
                 }
+                MyFragmentManager.getInstance().setCurrentFragment(mainK12Fragment);
                 break;
             case Constant.TAB_MINE://我的
                 if (mineFragment == null) {
@@ -193,10 +210,13 @@ public class MainActivity extends BaseActivity<VersionPresenter> implements
                 } else {
                     fragmentTransaction.show(mineFragment);
                 }
+                MyFragmentManager.getInstance().setCurrentFragment(mineFragment);
                 break;
         }
         fragmentTransaction.commit();
     }
+
+
 
     /**
      * 用来隐藏fragment的方法

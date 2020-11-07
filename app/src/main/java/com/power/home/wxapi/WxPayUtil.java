@@ -1,5 +1,7 @@
 package com.power.home.wxapi;
 
+import android.util.Log;
+
 import com.power.home.common.Constant;
 import com.power.home.common.util.ToastUtils;
 import com.power.home.common.util.UIUtil;
@@ -16,6 +18,7 @@ public class WxPayUtil {
     public WxPayUtil( PayOrderBean payBean) {
 
         IWXAPI api = WXAPIFactory.createWXAPI(UIUtil.getContext(), Constant.APP_ID);
+
         if (!api.isWXAppInstalled()) {
             ToastUtils.shortShow("请先安装微信");
             return;

@@ -9,13 +9,12 @@
         android:layout_width="@dimen/DIMEN_300DP"
         android:layout_height="@dimen/DIMEN_343DP"
         android:layout_alignParentBottom="true"
+
         android:background="@drawable/back_invite_shadow" />
 
     <LinearLayout
         android:layout_width="@dimen/DIMEN_280DP"
         android:layout_height="@dimen/DIMEN_397DP"
-        android:layout_marginLeft="@dimen/DIMEN_10DP"
-        android:layout_marginRight="@dimen/DIMEN_10DP"
         android:background="@drawable/back_invite_white"
         android:orientation="vertical">
 
@@ -28,7 +27,8 @@
                 android:id="@+id/iv_advertising"
                 android:layout_width="@dimen/DIMEN_280DP"
                 android:layout_height="@dimen/DIMEN_250DP"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                 />
 
             <ImageView
                 android:layout_width="@dimen/DIMEN_20DP"

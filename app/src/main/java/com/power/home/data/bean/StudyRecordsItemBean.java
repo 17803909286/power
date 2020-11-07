@@ -88,4 +88,18 @@ public class StudyRecordsItemBean extends BaseEntity{
     public void setCourseTime(int courseTime) {
         this.courseTime = courseTime;
     }
+
+    @Override
+    public String toString() {
+        return "StudyRecordsItemBean{" +
+                "id=" + id +
+                ", courseId='" + courseId + '\'' +
+                ", courseTitle='" + courseTitle + '\'' +
+                ", courseSubtitle='" + courseSubtitle + '\'' +
+                ", isFinish=" + isFinish +
+                ", latestProcess=" + latestProcess +
+                ", topProcess=" + topProcess +
+                ", courseTime=" + courseTime +
+                '}';
+    }
 }

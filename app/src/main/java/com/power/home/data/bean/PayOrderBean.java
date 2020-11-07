@@ -79,4 +79,17 @@ public class PayOrderBean {
     public void setNonceStr(String nonceStr) {
         this.nonceStr = nonceStr;
     }
+
+    @Override
+    public String toString() {
+        return "PayOrderBean{" +
+                "sign='" + sign + '\'' +
+                ", prepayId='" + prepayId + '\'' +
+                ", partnerId='" + partnerId + '\'' +
+                ", appId='" + appId + '\'' +
+                ", packageValue='" + packageValue + '\'' +
+                ", timeStamp='" + timeStamp + '\'' +
+                ", nonceStr='" + nonceStr + '\'' +
+                '}';
+    }
 }

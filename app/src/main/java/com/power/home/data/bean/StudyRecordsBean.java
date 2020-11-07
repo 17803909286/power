@@ -32,4 +32,11 @@ public class StudyRecordsBean extends BaseEntity{
         this.studyProgresses = studyProgresses;
     }
 
+    @Override
+    public String toString() {
+        return "StudyRecordsBean{" +
+                "name='" + name + '\'' +
+                ", studyProgresses=" + studyProgresses.toString() +
+                '}';
+    }
 }

@@ -48,6 +48,7 @@ import com.power.home.ui.activity.CoursePlayerActivity;
 import com.power.home.ui.activity.GuideActivity;
 import com.power.home.ui.activity.InviteFriendActivity;
 import com.power.home.ui.activity.LoginActivity;
+import com.power.home.ui.activity.MainActivity;
 import com.power.home.ui.activity.ShareActivity;
 import com.power.home.ui.activity.SplashActivity;
 import com.power.home.ui.activity.VerificationCodeLoginActivity;
@@ -141,6 +142,7 @@ public class App extends MultiDexApplication {
     private void initFloatView() {
         EventBusUtils.register(this);
         FloatingView.get().add();
+
         if (StringUtil.isNotNullString(SharePreferencesUtils.getFloatStatus())) {
             FloatingView.get().getView().setVisibility(View.VISIBLE);
             LogUtil.e("FloatingView", "VISIBLE======init===========================");
@@ -158,7 +160,9 @@ public class App extends MultiDexApplication {
     }
 
     private void getStatus() {
+
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
+
             @Override
             public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
 
@@ -166,7 +170,11 @@ public class App extends MultiDexApplication {
 
             @Override
             public void onActivityStarted(Activity activity) {
-                FloatingView.get().attach(activity);
+                if(activity.getClass().getSimpleName().equals(MainActivity.class.getSimpleName())){
+                    FloatingView.get().attach(activity);
+                }
+                LogUtil.e("FloatingView", activity.getClass().getName()+"======start===========================");
+
             }
 
             @Override
@@ -177,12 +185,12 @@ public class App extends MultiDexApplication {
                         if (null != FloatingView.get().getView()) {
                             FloatingView.get().getView().setVisibility(View.VISIBLE);
                         }
-                        LogUtil.e("FloatingView", "VISIBLE======resumed===========================");
+                        LogUtil.e("FloatingView", activity.getClass().getName()+"VISIBLE======resumed===========================");
                     } else {
                         if (null != FloatingView.get().getView()) {
                             FloatingView.get().getView().setVisibility(View.GONE);
                         }
-                        LogUtil.e("FloatingView", "GONE======resumed===========================");
+                        LogUtil.e("FloatingView", activity.getClass().getName()+"GONE======resumed===========================");
                     }
                 } else {
                     if (null != FloatingView.get().getView()) {
@@ -410,5 +418,6 @@ public class App extends MultiDexApplication {
                 !activity.getClass().getSimpleName().equals(ShareActivity.class.getSimpleName()) &&
                 !activity.getClass().getSimpleName().equals(InviteFriendActivity.class.getSimpleName()) &&
                 !activity.getClass().getSimpleName().equals(CourseDetailsActivity.class.getSimpleName());
+
     }
 }

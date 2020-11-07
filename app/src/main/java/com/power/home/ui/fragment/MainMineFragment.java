@@ -43,6 +43,7 @@ import com.power.home.ui.adapter.MineDiamonAdapter;
 import com.power.home.ui.adapter.MineMenuAdapter;
 import com.power.home.ui.widget.CircleImageView;
 import com.power.home.ui.widget.RedTipRechImageView;
+import com.power.home.ui.widget.floatview.FloatingView;
 
 import butterknife.BindView;
 
@@ -100,6 +101,9 @@ public class MainMineFragment extends BaseFragment<MainMinePresenter> implements
     @Override
     public int setLayout() {
         StatusBarUtil.transparencyBar2(getActivity());
+        if (null != FloatingView.get().getView()) {
+            FloatingView.get().getView().setVisibility(View.GONE);
+        }
         StatusBarUtil.setStatusTextColor(false, getActivity());
         return R.layout.fragment_mine;
     }

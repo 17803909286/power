@@ -29,6 +29,12 @@ public class StudyRecordPresenter extends BasePresenter<StudyRecordContract.IStu
                             mView.getStudyProgressSuccess(studyRecordsBeans);
                         }
                     }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+
+                    }
                 });
     }
 }

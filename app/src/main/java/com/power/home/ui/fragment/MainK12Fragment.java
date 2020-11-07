@@ -53,6 +53,7 @@ import com.power.home.ui.adapter.HomeTabAdapter;
 import com.power.home.ui.adapter.MainChampAdapter;
 import com.power.home.ui.adapter.PagerFragmentAdapter;
 import com.power.home.ui.widget.ScalePageTransformer;
+import com.power.home.ui.widget.floatview.FloatingView;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
 import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
@@ -133,6 +134,7 @@ public class MainK12Fragment extends BaseFragment<MainK12Presenter> implements V
 
     @Override
     public int setLayout() {
+
         return R.layout.fragment_k12;
     }
 

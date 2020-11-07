@@ -17,8 +17,8 @@ android {
         applicationId "com.power.home"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 102
-        versionName "1.0.2"
+        versionCode 103
+        versionName "1.0.3"
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath true
@@ -50,7 +50,7 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.config
             lintOptions {
                 checkReleaseBuilds false
                 abortOnError false

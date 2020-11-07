@@ -61,6 +61,7 @@ import com.power.home.ui.widget.GlideRoundTransform;
 import com.power.home.ui.widget.MyImageView;
 import com.power.home.ui.widget.MyPopupWindow;
 import com.power.home.ui.widget.ScalePageTransformer;
+import com.power.home.ui.widget.floatview.FloatingView;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
 import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
@@ -146,6 +147,8 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
 
     @Override
     public int setLayout() {
+
+
         return R.layout.fragment_home;
     }
 

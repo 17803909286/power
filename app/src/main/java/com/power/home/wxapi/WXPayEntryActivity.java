@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.power.home.common.Constant;
 import com.power.home.common.bus.EventBusEvent;
 import com.power.home.common.bus.EventBusUtils;
+import com.power.home.common.util.UIUtil;
 import com.power.home.ui.activity.PaySuccessActivity;
 import com.tencent.mm.opensdk.constants.ConstantsAPI;
 import com.tencent.mm.opensdk.modelbase.BaseReq;

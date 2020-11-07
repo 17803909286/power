@@ -304,7 +304,7 @@ public interface ApiService {
     //获取七牛云tocken
     @POST("/api/getToken")
     Observable<BaseBean<TokenBean>> getUploadToken();
-    //获取七牛云tocken
+    //实名认证
     @POST("/api/auth/appUserAssets/realNameAuth/v2")
     Observable<BaseBean<CertificationBean>> getPersonVerifyResult(@Body RequestBody body);
 
