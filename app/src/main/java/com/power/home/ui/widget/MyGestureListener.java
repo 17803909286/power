@@ -36,11 +36,7 @@ public class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
             float x1 = e1.getX();
             float x2 = e2.getX();
             int offsetX = (int) (x2 - x1);
-            LogUtil.e("currentActivity", MyActivityManager.getInstance().getCurrentActivity().getClass().getSimpleName()+"===========================");
-            LogUtil.e("currentActivity", MyFragmentManager.getInstance().getCurrentFragment().getClass().getSimpleName()+"========================");
-            LogUtil.e("currentActivity", MainActivity.class.getSimpleName()+"===========================");
-            LogUtil.e("currentActivity", MainHomeFragment.class.getSimpleName()+"===========================");
-            LogUtil.e("currentActivity", MainK12Fragment.class.getSimpleName()+"===========================");
+
 
             if((MyActivityManager.getInstance().getCurrentActivity().getClass().getSimpleName().equals(MainActivity.class.getSimpleName())
             && MyFragmentManager.getInstance().getCurrentFragment().getClass().getSimpleName().equals(MainHomeFragment.class.getSimpleName()))
@@ -51,14 +47,14 @@ public class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
                     if (offsetY > 10) {
 
                         if (FloatingView.get().getView().getVisibility() == View.GONE) {
-                            LogUtil.e("FloatingView","VISIBLE======滑动===========================");
+
                             FloatingView.get().getView().setVisibility(View.VISIBLE);
                             FloatingView.get().getView().startAnimation(UIUtil.getShowAnimation());
                         }
                     } else {
 
                         if (FloatingView.get().getView().getVisibility() == View.VISIBLE) {
-                            LogUtil.e("FloatingView","GONE======滑动===========================");
+
                             FloatingView.get().getView().setVisibility(View.GONE);
                             FloatingView.get().getView().startAnimation(UIUtil.getHideAnimation());
                         }

@@ -40,15 +40,18 @@
             android:layout_centerVertical="true"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:layout_marginTop="@dimen/DIMEN_30DP"
+            android:layout_marginTop="@dimen/DIMEN_25DP"
             android:background="@drawable/icon_id_card_front" />
         <ImageView
             android:id="@+id/iv_delete_front"
-            android:layout_width="@dimen/DIMEN_12DP"
-            android:layout_height="@dimen/DIMEN_12DP"
+            android:layout_width="@dimen/DIMEN_15DP"
+            android:layout_height="@dimen/DIMEN_15DP"
             android:layout_alignTop="@+id/iv_id_card_front"
-            android:layout_alignLeft="@+id/iv_id_card_front"
+            android:layout_alignRight="@+id/iv_id_card_front"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="-12dp"
             android:background="@drawable/icon_delete_img"
+            android:scaleType="fitXY"
             android:visibility="gone"
             />
 
@@ -82,11 +85,14 @@
             android:background="@drawable/icon_id_card_front" />
         <ImageView
             android:id="@+id/iv_delete_back"
-            android:layout_width="@dimen/DIMEN_12DP"
-            android:layout_height="@dimen/DIMEN_12DP"
+            android:layout_width="@dimen/DIMEN_15DP"
+            android:layout_height="@dimen/DIMEN_15DP"
             android:layout_alignTop="@+id/iv_id_card_back"
-            android:layout_alignLeft="@+id/iv_id_card_back"
+            android:layout_alignRight="@+id/iv_id_card_back"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="-12dp"
             android:background="@drawable/icon_delete_img"
+            android:scaleType="fitXY"
             android:visibility="gone"
             />
 

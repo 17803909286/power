@@ -298,7 +298,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
                 }
                 String token = SharePreferencesUtils.getUploadToken();
                 String imageUrl = SharePreferencesUtils.getUploadBaseUrl();
-                Log.i("uploadImageUrl：",imageUrl);
+
 
                 loadBuilder.setMessage("正在认证...");
                 if(TextUtils.isEmpty(token)){
@@ -371,7 +371,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
         }
 
         SharePreferencesUtils.setUploadToken(tokenBean.getToken());
-        Log.i("qiniutokenupload：",tokenBean.getUrl());
+
         SharePreferencesUtils.setUploadImageBaseUrl(tokenBean.getUrl());
         this.uploadPersonPicToServer();
     }
@@ -384,7 +384,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
             UIUtil.showToastSafe("认证失败");
             return;
         }
-        Log.i("CertificationBeanid：",certificationBean.getId());
+
         Intent intent = new Intent(UIUtil.getContext(), CertificationTwoActivity.class);
         intent.putExtra(Constant.id, certificationBean.getId());
         startActivity(intent);
@@ -400,16 +400,10 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
 
     private void uploadPersonInfo(){
         String imageUrl = SharePreferencesUtils.getUploadBaseUrl();
-        Log.i("uploadImageUrl111：",imageUrl);
+
         String front = imageUrl + "/" + frontImageUrl;
         String back = imageUrl +"/" + backImageUrl;
-        Log.i("personinfoback：",back);
-        Log.i("personInfofront",front);
-        Log.i("personInfoUserid",SharePreferencesUtils.getUserId());
-        Log.i("personInfoidCard",frontBean.getIdcard());
-        Log.i("personInfoaddress",frontBean.getAddress());
-        Log.i("personInfobegin",backBean.getBegin());
-        Log.i("personInfoend",backBean.getEnd());
+
         mPresenter.personVerify(frontBean.getRealname(),frontBean.getIdcard(),Integer.parseInt(SharePreferencesUtils.getUserId()),front,back,frontBean.getAddress(),backBean.getBegin(),backBean.getEnd());
     }
 
@@ -452,7 +446,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
     public void onSuccess(JSONObject responseObj)  {
 
         loadingDailog.hide();
-        Log.i("personinfo：",responseObj.toString());
+
         try{
             int error_code = responseObj.getInt("error_code");
             if(error_code != 0){
@@ -471,7 +465,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
             }else{
                 PersonVerifyBackBean bean = new Gson().fromJson(resultObj.toString(),PersonVerifyBackBean.class);
                 backBean = bean;
-                Log.i("personInfoend", bean.toString());
+
 
             }
 
@@ -489,7 +483,7 @@ public class CertificationFristActivity extends BaseActivity<UploadIdCardPresent
 
     @Override
     public void onFailure(Object reasonObj) {
-        Log.i("personinfofail：",reasonObj.toString());
+
         loadingDailog.hide();
         UIUtil.showToastSafe("认证失败");
 

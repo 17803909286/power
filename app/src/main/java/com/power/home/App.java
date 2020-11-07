@@ -23,6 +23,7 @@ import com.blankj.utilcode.util.Utils;
 import com.liulishuo.filedownloader.FileDownloader;
 import com.power.home.common.Constant;
 import com.power.home.common.MyActivityManager;
+import com.power.home.common.MyFragmentManager;
 import com.power.home.common.bus.EventBusEvent;
 import com.power.home.common.bus.EventBusUtils;
 import com.power.home.common.util.ACache;
@@ -53,6 +54,8 @@ import com.power.home.ui.activity.ShareActivity;
 import com.power.home.ui.activity.SplashActivity;
 import com.power.home.ui.activity.VerificationCodeLoginActivity;
 import com.power.home.ui.activity.WebViewActivity;
+import com.power.home.ui.fragment.MainHomeFragment;
+import com.power.home.ui.fragment.MainK12Fragment;
 import com.power.home.ui.service.MediaService;
 import com.power.home.ui.widget.floatview.EnFloatingView;
 import com.power.home.ui.widget.floatview.FloatingView;
@@ -145,7 +148,7 @@ public class App extends MultiDexApplication {
 
         if (StringUtil.isNotNullString(SharePreferencesUtils.getFloatStatus())) {
             FloatingView.get().getView().setVisibility(View.VISIBLE);
-            LogUtil.e("FloatingView", "VISIBLE======init===========================");
+
             Music music = (Music) ACache.get(UIUtil.getContext()).getAsObject(Constant.floatStatus);
             if (null != music) {
                 initAudioService(music);
@@ -173,30 +176,37 @@ public class App extends MultiDexApplication {
                 if(activity.getClass().getSimpleName().equals(MainActivity.class.getSimpleName())){
                     FloatingView.get().attach(activity);
                 }
-                LogUtil.e("FloatingView", activity.getClass().getName()+"======start===========================");
+
 
             }
 
             @Override
             public void onActivityResumed(Activity activity) {
                 MyActivityManager.getInstance().setCurrentActivity(activity);
-                if (StringUtil.isNotNullString(SharePreferencesUtils.getFloatStatus())) {
-                    if (getShowActivity(activity)) {
-                        if (null != FloatingView.get().getView()) {
-                            FloatingView.get().getView().setVisibility(View.VISIBLE);
+                if(MyFragmentManager.getInstance().getCurrentFragment()==null){
+                    return;
+                }
+                if(MyFragmentManager.getInstance().getCurrentFragment().getClass().getSimpleName().equals(MainHomeFragment.class.getSimpleName())
+                ||MyFragmentManager.getInstance().getCurrentFragment().getClass().getSimpleName().equals(MainK12Fragment.class.getSimpleName())){
+                    if (StringUtil.isNotNullString(SharePreferencesUtils.getFloatStatus())) {
+                        if (getShowActivity(activity)) {
+                            if (null != FloatingView.get().getView()) {
+                                FloatingView.get().getView().setVisibility(View.VISIBLE);
+                            }
+
+                        } else {
+                            if (null != FloatingView.get().getView()) {
+                                FloatingView.get().getView().setVisibility(View.GONE);
+                            }
+                            LogUtil.e("FloatingView", activity.getClass().getName()+"GONE======resumed===========================");
                         }
-                        LogUtil.e("FloatingView", activity.getClass().getName()+"VISIBLE======resumed===========================");
                     } else {
                         if (null != FloatingView.get().getView()) {
                             FloatingView.get().getView().setVisibility(View.GONE);
                         }
-                        LogUtil.e("FloatingView", activity.getClass().getName()+"GONE======resumed===========================");
-                    }
-                } else {
-                    if (null != FloatingView.get().getView()) {
-                        FloatingView.get().getView().setVisibility(View.GONE);
                     }
                 }
+
             }
 
             @Override
