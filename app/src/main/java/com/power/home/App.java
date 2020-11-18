@@ -211,7 +211,7 @@ public class App extends MultiDexApplication {
 
             @Override
             public void onActivityPaused(Activity activity) {
-                LogUtil.e("FloatingView", activity.getClass().getName() + "======Paused===========================");
+
             }
 
             @Override
@@ -303,7 +303,7 @@ public class App extends MultiDexApplication {
                     getPackageName(), PackageManager.GET_META_DATA);
             return info.metaData.getString(key);
         } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+
         }
         return "";
     }
