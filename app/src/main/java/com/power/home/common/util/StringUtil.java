@@ -38,9 +38,12 @@ public class StringUtil extends BaseSingleton {
         StringBuilder builder = new StringBuilder();
         builder.append("<html>");
         builder.append("<head>");
-        builder.append("\"<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0, user-scalable=no\\\"> \" +\n" +
-                "                \"<style>html{padding:15px;} body{word-wrap:break-word;font-size:13px;padding:0px;margin:0px} p{padding:0px;margin:0px;font-size:13px;color:#222222;line-height:1.3;} img{padding:0px,margin:0px;max-width:100%; width:100%; height:auto;}</style>\" +\n" +
-                "                \"</head>\"");
+//        builder.append("\"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\"" +
+//                "\"<style>html{padding:15px;} body{word-wrap:break-word;font-size:13px;padding:0px;margin:0px} p{padding:0px;margin:0px;font-size:13px;color:#222222;line-height:1.3;} img{padding:0px,margin:0px;max-width:100%; width:100%; height:auto;}</style>\"" +
+//                "\"</head>\"");
+        builder.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">" +
+                "<style>html{padding:15px;} body{word-wrap:break-word;font-size:13px;padding:0px;margin:0px} p{padding:0px;margin:0px;font-size:13px;color:#222222;line-height:1.3;} img{padding:0px,margin:0px;max-width:100%; width:100%; height:auto;}</style>" +
+                "</head>");
         builder.append("<body>").append(bodyHtml).append("</body>").append("</html>");
         return builder.toString();
 

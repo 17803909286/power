@@ -217,6 +217,7 @@ public class CourseDetailsActivity extends BaseActivity<EnrollPresenter> impleme
             webView.loadUrl(urlString);
         }else{
             String htmlString = StringUtil.appendHtmlString(url);
+
             webView.loadDataWithBaseURL(null,htmlString,"text/html;charset=utf-8","utf-8",null);
         }
 
