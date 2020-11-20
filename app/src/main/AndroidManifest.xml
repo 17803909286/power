@@ -63,10 +63,10 @@
             android:value="${channelName}" /> <!-- //屏幕适配 -->
         <meta-data
             android:name="design_width_in_dp"
-            android:value="360" />
+            android:value="375" />
         <meta-data
             android:name="design_height_in_dp"
-            android:value="640" />
+            android:value="667" />
 
         <activity
             android:name=".ui.activity.SplashActivity"
@@ -362,6 +362,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" /> <!-- 推送配置开始 ******************************************************************************** -->
+
         <!-- User defined.  For test only  用户自定义的广播接收器 -->
         <receiver
             android:name=".jpush.JpushReceiver"
