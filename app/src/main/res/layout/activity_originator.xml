@@ -1,46 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/iv_head"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical"
+
+    android:background="@mipmap/dlxsapp_bg">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="7">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_50DP"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="60dp"
+        android:backgroundTintMode="src_in"
+        android:layout_marginRight="@dimen/DIMEN_50DP"
+        android:src="@mipmap/dlxapp_header"
 
 
-     <RelativeLayout
-         android:id="@+id/r_bottom"
-         android:layout_width="match_parent"
-         android:layout_height="@dimen/DIMEN_100DP"
-         android:layout_marginBottom="0dp"
-         android:background="#FFFFFF"
-         android:layout_alignParentLeft="true"
-         android:layout_alignParentRight="true"
-         android:layout_alignParentBottom="true">
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_top"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/dlxsapp_text"
 
-           <ImageView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_centerInParent="true"
-               android:src="@mipmap/dlxsbottom"/>
-     </RelativeLayout>
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_alignParentLeft="true"
-       android:layout_alignParentRight="true"
+        android:layout_below ="@+id/iv_top"
+        />
 
-       android:layout_marginBottom="@dimen/DIMEN_100DP"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_top"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/DIMEN_50DP"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="-10dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:backgroundTintMode="src_atop"
+
+        android:src="@mipmap/dlxsapp_person" />
+
+  </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:background="#FFFFFF"
+      android:layout_marginBottom="0dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginRight="0dp"
+
+      android:layout_weight="1"
+      >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:src="@mipmap/dlxsapp_bottom"
+        />
+  </RelativeLayout>
 
 
-       >
-       <ImageView
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:scaleType="centerCrop"
-           android:src="@mipmap/dlxstop"
-           />
-   </RelativeLayout>
-</RelativeLayout>
+
+</LinearLayout>
 
 
 
