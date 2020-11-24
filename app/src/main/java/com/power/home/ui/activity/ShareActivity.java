@@ -110,9 +110,9 @@ public class ShareActivity extends BaseActivity implements View.OnClickListener 
                     for (int i = 0; i < list.size(); i++) {
                         if (i != share.getPosition()) {
                             ShareFragment shareFragment = (ShareFragment) list.get(i);
-                            if (null != shareFragment.etTitle) {
-                                shareFragment.etTitle.setText(share.getTitle());
-                            }
+//                            if (null != shareFragment.etTitle) {
+//                                shareFragment.etTitle.setText(share.getTitle());
+//                            }
                         }
                     }
                     break;
@@ -129,16 +129,16 @@ public class ShareActivity extends BaseActivity implements View.OnClickListener 
             @Override
             public void onClick(View view) {
                 ShareFragment fragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-                if (fragment.tvChosePic != null) {
-                    fragment.tvChosePic.setVisibility(View.GONE);
-                }
+//                if (fragment.tvChosePic != null) {
+//                    fragment.tvChosePic.setVisibility(View.GONE);
+//                }
 
                 viewPagerShare.setDrawingCacheEnabled(true);
                 viewPagerShare.buildDrawingCache();
                 drawingCache = Bitmap.createBitmap(viewPagerShare.getDrawingCache());
-                if (fragment.tvChosePic != null) {
-                    fragment.tvChosePic.setVisibility(View.VISIBLE);
-                }
+//                if (fragment.tvChosePic != null) {
+//                    fragment.tvChosePic.setVisibility(View.VISIBLE);
+//                }
 
                 MySharePicturePopup mySharePicturePopup = new MySharePicturePopup(ShareActivity.this);
                 mySharePicturePopup.showPopWindow();
@@ -183,11 +183,11 @@ public class ShareActivity extends BaseActivity implements View.OnClickListener 
             case R.id.rl_share_change:
                 getNext();
                 ShareFragment shareFragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-                shareFragment.etTitle.setText(slogans.get(position));
+//                shareFragment.etTitle.setText(slogans.get(position));
                 break;
             case R.id.rl_share_write:
                 ShareFragment currentShareFragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-                showSoftInputFromWindow(currentShareFragment.etTitle);
+//                showSoftInputFromWindow(currentShareFragment.etTitle);
                 break;
         }
 

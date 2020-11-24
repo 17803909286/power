@@ -109,9 +109,9 @@ public class InviteFriendActivity extends BaseActivity<InviteFriendPresenter> im
                     for (int i = 0; i < list.size(); i++) {
                         if (i != share.getPosition()) {
                             ShareFragment shareFragment = (ShareFragment) list.get(i);
-                            if (null != shareFragment.etTitle) {
-                                shareFragment.etTitle.setText(share.getTitle());
-                            }
+//                            if (null != shareFragment.etTitle) {
+//                                shareFragment.etTitle.setText(share.getTitle());
+//                            }
                         }
                     }
                     break;
@@ -131,16 +131,16 @@ public class InviteFriendActivity extends BaseActivity<InviteFriendPresenter> im
             @Override
             public void onClick(View v) {
                 ShareFragment fragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-                if (fragment.tvChosePic != null) {
-                    fragment.tvChosePic.setVisibility(View.GONE);
-                }
+//                if (fragment.tvChosePic != null) {
+//                    fragment.tvChosePic.setVisibility(View.GONE);
+//                }
 
                 viewPagerShare.setDrawingCacheEnabled(true);
                 viewPagerShare.buildDrawingCache();
                 drawingCache = Bitmap.createBitmap(viewPagerShare.getDrawingCache());
-                if (fragment.tvChosePic != null) {
-                    fragment.tvChosePic.setVisibility(View.VISIBLE);
-                }
+//                if (fragment.tvChosePic != null) {
+//                    fragment.tvChosePic.setVisibility(View.VISIBLE);
+//                }
                 showSharePopup();
             }
         });
@@ -276,11 +276,11 @@ public class InviteFriendActivity extends BaseActivity<InviteFriendPresenter> im
             case R.id.rl_share_change:
                 getNext();
                 ShareFragment shareFragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-                shareFragment.etTitle.setText(slogans.get(position));
+//                shareFragment.etTitle.setText(slogans.get(position));
                 break;
             case R.id.rl_share_write:
                 ShareFragment currentShareFragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-                showSoftInputFromWindow(currentShareFragment.etTitle);
+//                showSoftInputFromWindow(currentShareFragment.etTitle);
                 break;
         }
         viewPagerShare.destroyDrawingCache();

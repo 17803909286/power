@@ -61,10 +61,10 @@ public class ShareFragment extends BaseFragment implements View.OnClickListener 
     ImageView ivQrcode;
     @BindView(R.id.tv_user_name)
     TextView tvUserName;
-    @BindView(R.id.tv_chose_pic)
-    public TextView tvChosePic;
-    @BindView(R.id.et_title)
-    public EditText etTitle;
+//    @BindView(R.id.tv_chose_pic)
+//    public TextView tvChosePic;
+//    @BindView(R.id.et_title)
+//    public EditText etTitle;
     @BindView(R.id.tv_user_content)
     TextView tvUserContent;
     private String title, url, inviteUrl;
@@ -98,7 +98,7 @@ public class ShareFragment extends BaseFragment implements View.OnClickListener 
 
     @Override
     public void init() {
-        etTitle.setText(title);
+//        etTitle.setText(title);
         DrawableUtil.loadUrl(R.drawable.icon_place_holder_311_350, ivAdvertising, url);
         ivQrcode.setImageBitmap(DrawableUtil.createQRCodeBitmapMarginZero(inviteUrl, UIUtil.dip2px(80), UIUtil.dip2px(80)));
 
@@ -114,26 +114,26 @@ public class ShareFragment extends BaseFragment implements View.OnClickListener 
 
     @Override
     protected void setListener() {
-        etTitle.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                shareImgeBean.setTitle(charSequence.toString());
-                if (isShow) {
-                    EventBusUtils.sendEvent(new EventBusEvent<Object>(EventBusUtils.EventCode.FINISH_EDIT_SHARE, shareImgeBean));
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-        tvChosePic.setOnClickListener(this);
+//        etTitle.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//                shareImgeBean.setTitle(charSequence.toString());
+//                if (isShow) {
+//                    EventBusUtils.sendEvent(new EventBusEvent<Object>(EventBusUtils.EventCode.FINISH_EDIT_SHARE, shareImgeBean));
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable editable) {
+//
+//            }
+//        });
+//        tvChosePic.setOnClickListener(this);
     }
 
     @Override
@@ -145,18 +145,18 @@ public class ShareFragment extends BaseFragment implements View.OnClickListener 
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         isShow = isVisibleToUser;
-        if (null != etTitle) {
-            etTitle.setEnabled(!isVisibleToUser);
-        }
+//        if (null != etTitle) {
+//            etTitle.setEnabled(!isVisibleToUser);
+//        }
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.tv_chose_pic:
-                chooseImage();
-                break;
-        }
+//        switch (v.getId()) {
+//            case R.id.tv_chose_pic:
+//                chooseImage();
+//                break;
+//        }
     }
 
     private void chooseImage() {

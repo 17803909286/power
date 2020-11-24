@@ -32,7 +32,7 @@ public class GuideOriginatorActivity extends BaseActivity   {
     private Handler hideHandler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
-//            finish();
+            finish();
         }
     };
     @Override
@@ -52,7 +52,7 @@ public class GuideOriginatorActivity extends BaseActivity   {
 
 
         this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        hideHandler.sendEmptyMessageDelayed(0,3000);
+        hideHandler.sendEmptyMessageDelayed(0,3500);
 
         return true;
     }

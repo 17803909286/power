@@ -3,19 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="@dimen/DIMEN_420DP"
+
     android:background="@color/colorWhiteF5F7FA">
 
-    <ImageView
-        android:layout_width="@dimen/DIMEN_300DP"
-        android:layout_height="@dimen/DIMEN_343DP"
-        android:layout_alignParentBottom="true"
+<!--    <ImageView-->
+<!--        android:layout_width="@dimen/DIMEN_300DP"-->
+<!--        android:layout_height="@dimen/DIMEN_343DP"-->
+<!--        android:layout_alignParentBottom="true"-->
 
-        android:background="@drawable/back_invite_shadow" />
+<!--        android:background="@drawable/back_invite_shadow" />-->
 
     <LinearLayout
         android:layout_width="@dimen/DIMEN_280DP"
         android:layout_height="@dimen/DIMEN_397DP"
-        android:background="@drawable/back_invite_white"
+
         android:orientation="vertical">
 
         <RelativeLayout
@@ -37,38 +38,39 @@
                 android:layout_marginTop="@dimen/DIMEN_10DP"
                 android:background="@drawable/icon_share_logo" />
 
-            <TextView
-                android:id="@+id/tv_chose_pic"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/DIMEN_32DP"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorBlack66000000"
-                android:gravity="center"
-                android:text="点击更换背景图片"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/DIMEN_12SP" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_chose_pic"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/DIMEN_32DP"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:background="@color/colorBlack66000000"-->
+<!--                android:gravity="center"-->
+<!--                android:text="点击更换背景图片"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="@dimen/DIMEN_12SP" />-->
         </RelativeLayout>
 
-        <EditText
-            android:id="@+id/et_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/DIMEN_12DP"
-            android:background="@android:color/transparent"
-            android:enabled="false"
-            android:maxLength="40"
-            android:textColor="@color/colorBlack1A1F28"
-            android:textColorHint="@color/colorBlack1A1F28"
-            android:textSize="@dimen/DIMEN_14SP"
-            android:textStyle="bold"
-            tools:text="邀请你加入变现云课，一起学习" />
+<!--        <EditText-->
+<!--            android:id="@+id/et_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/DIMEN_12DP"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:enabled="false"-->
+<!--            android:maxLength="40"-->
+<!--            android:textColor="@color/colorBlack1A1F28"-->
+<!--            android:textColorHint="@color/colorBlack1A1F28"-->
+<!--            android:textSize="@dimen/DIMEN_14SP"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:text="邀请你加入变现云课，一起学习" />-->
 
         <RelativeLayout
+            android:id="@+id/rl_bottom"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <RelativeLayout
-                android:id="@+id/rl_bottom"
+
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/DIMEN_50DP"
                 android:layout_alignParentBottom="true"
