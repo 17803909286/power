@@ -22,9 +22,11 @@
         android:textColor="@color/colorBlack1A1F28"
         android:textStyle="bold"
         android:gravity="center_vertical"
-        android:layout_marginLeft="@dimen/DIMEN_6DP"
-        android:layout_marginRight="@dimen/DIMEN_6DP"
+        android:layout_marginLeft="@dimen/DIMEN_3DP"
+        android:layout_marginRight="@dimen/DIMEN_3DP"
+        android:textSize="@dimen/DIMEN_12SP"
         android:maxLines="2"
+
         android:ellipsize="end"/>
 
 
