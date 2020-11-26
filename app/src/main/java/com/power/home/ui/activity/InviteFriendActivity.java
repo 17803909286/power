@@ -24,6 +24,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.power.home.R;
 import com.power.home.common.Constant;
 import com.power.home.common.bus.BindEventBus;
@@ -70,10 +71,12 @@ public class InviteFriendActivity extends BaseActivity<InviteFriendPresenter> im
     ViewPager viewPagerShare;
     @BindView(R.id.indicator)
     CircleIndicator indicator;
-    @BindView(R.id.rl_share_change)
-    RelativeLayout rlShareChange;
-    @BindView(R.id.rl_share_write)
-    RelativeLayout rlShareWrite;
+//    @BindView(R.id.rl_share_change)
+//    RelativeLayout rlShareChange;
+//    @BindView(R.id.rl_share_write)
+//    RelativeLayout rlShareWrite;
+    @BindView(R.id.tv_invite)
+    TextView tv_invite;
     private List<Fragment> list = new ArrayList<>();
     private List<String> posterImages;
     private List<String> slogans;
@@ -125,23 +128,12 @@ public class InviteFriendActivity extends BaseActivity<InviteFriendPresenter> im
         tvShareWx.setOnClickListener(this);
         tvShareFriends.setOnClickListener(this);
         tvShareLocation.setOnClickListener(this);
-        rlShareChange.setOnClickListener(this);
-        rlShareWrite.setOnClickListener(this);
+        tv_invite.setOnClickListener(this);
         titleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShareFragment fragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
-//                if (fragment.tvChosePic != null) {
-//                    fragment.tvChosePic.setVisibility(View.GONE);
-//                }
-
-                viewPagerShare.setDrawingCacheEnabled(true);
-                viewPagerShare.buildDrawingCache();
-                drawingCache = Bitmap.createBitmap(viewPagerShare.getDrawingCache());
-//                if (fragment.tvChosePic != null) {
-//                    fragment.tvChosePic.setVisibility(View.VISIBLE);
-//                }
-                showSharePopup();
+                ARouter.getInstance().build("/android/" + "invitedRecord")
+                        .withString(Constant.type,"INVITED").navigation();
             }
         });
     }
@@ -281,6 +273,21 @@ public class InviteFriendActivity extends BaseActivity<InviteFriendPresenter> im
             case R.id.rl_share_write:
                 ShareFragment currentShareFragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
 //                showSoftInputFromWindow(currentShareFragment.etTitle);
+                break;
+            case R.id.tv_invite:
+                ShareFragment fragment = (ShareFragment) list.get(viewPagerShare.getCurrentItem());
+//                if (fragment.tvChosePic != null) {
+//                    fragment.tvChosePic.setVisibility(View.GONE);
+//                }
+
+                viewPagerShare.setDrawingCacheEnabled(true);
+                viewPagerShare.buildDrawingCache();
+                drawingCache = Bitmap.createBitmap(viewPagerShare.getDrawingCache());
+//                if (fragment.tvChosePic != null) {
+//                    fragment.tvChosePic.setVisibility(View.VISIBLE);
+//                }
+                showSharePopup();
+
                 break;
         }
         viewPagerShare.destroyDrawingCache();

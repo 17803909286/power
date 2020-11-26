@@ -52,7 +52,9 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void jump() {
-
+        Intent intent = new Intent(this, GuideOriginatorActivity.class);
+        startActivity(intent);
+        finish();
         /*int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE);
         //检查是否有读取联系人权限
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -62,25 +64,25 @@ public class SplashActivity extends BaseActivity {
             //有权限了，对其进行操作
 
         }*/
-        requestPhonePermissionStatic(new Consumer<Boolean>() {
-            @Override
-            public void accept(Boolean aBoolean) throws Exception {
-                if (SharePreferencesUtils.isFirst()) {
-                    if (UserCacheUtil.isLogin()) {
-                        startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                    } else {
-                        //无论登录成功与否 都要去首页
-                        Intent intent = new Intent(UIUtil.getContext(), LoginActivity.class);
-                        intent.putExtra(Constant.from, "out");
-                        startActivity(intent);
-                    }
-                } else {
-                    //第一次进入暂无标记
-                    startActivity(new Intent(SplashActivity.this, GuideActivity.class));
-                }
-                finish();
-            }
-        });
+//        requestPhonePermissionStatic(new Consumer<Boolean>() {
+//            @Override
+//            public void accept(Boolean aBoolean) throws Exception {
+//                if (SharePreferencesUtils.isFirst()) {
+//                    if (UserCacheUtil.isLogin()) {
+//                        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+//                    } else {
+//                        //无论登录成功与否 都要去首页
+//                        Intent intent = new Intent(UIUtil.getContext(), LoginActivity.class);
+//                        intent.putExtra(Constant.from, "out");
+//                        startActivity(intent);
+//                    }
+//                } else {
+//                    //第一次进入暂无标记
+//                    startActivity(new Intent(SplashActivity.this, GuideActivity.class));
+//                }
+//                finish();
+//            }
+//        });
 
 
     }

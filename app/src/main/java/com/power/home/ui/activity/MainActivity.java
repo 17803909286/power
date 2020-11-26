@@ -67,8 +67,7 @@ public class MainActivity extends BaseActivity<VersionPresenter> implements
 
     @Override
     public boolean init() {
-        Intent intent = new Intent(this, GuideOriginatorActivity.class);
-        startActivity(intent);
+
         setClick(mPosition);
         mPresenter.getVersion();
         return true;

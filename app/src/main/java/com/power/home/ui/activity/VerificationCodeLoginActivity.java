@@ -1,7 +1,9 @@
 package com.power.home.ui.activity;
 
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -76,6 +78,14 @@ public class VerificationCodeLoginActivity extends BaseActivity<LoginPresenter> 
 
     @Override
     public boolean init() {
+
+        String phoneNumString = SharePreferencesUtils.getUserName();
+        Log.i("phoneUserNameget","喀什登录");
+        Log.i("phoneUserNameget",phoneNumString);
+
+        if(!TextUtils.isEmpty(phoneNumString)){
+            etPhoneNum.setText(phoneNumString);
+        }
         return false;
     }
 
@@ -231,6 +241,9 @@ public class VerificationCodeLoginActivity extends BaseActivity<LoginPresenter> 
         UserCacheUtil.saveInfo(userInfoBean.getUser());
 
         SharePreferencesUtils.clearFloatFlag();
+        String phone = etPhoneNum.getText().toString();
+        SharePreferencesUtils.saveUserName(phone);
+        Log.i("phoneUserName",phone);
 //        if (StringUtil.isNotNullString(userInfoBean.getUser().getIsFirstRegistration()) && userInfoBean.getUser().getIsFirstRegistration().equals("true")) {
 //            Intent intent = new Intent(this, ReferralCodeActivity.class);
 //            intent.putExtra(Constant.from, from);
