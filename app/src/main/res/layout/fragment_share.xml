@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="@dimen/DIMEN_420DP"
+    android:layout_height="@dimen/DIMEN_362DP"
 
     android:background="@color/colorWhiteF5F7FA">
 
@@ -15,8 +15,8 @@
 
     <LinearLayout
         android:layout_width="@dimen/DIMEN_280DP"
-        android:layout_height="@dimen/DIMEN_397DP"
-
+        android:layout_height="@dimen/DIMEN_330DP"
+       android:background="@drawable/bg_shadow_white"
         android:orientation="vertical">
 
         <RelativeLayout
